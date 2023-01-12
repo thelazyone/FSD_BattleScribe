@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="b4c6-0424-e723-8a08" name="Tech" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="b586-bb82-209e-245e" name="Airstrike" hidden="false" collective="false" import="true" targetId="6a5d-c01c-e69e-dedf" type="selectionEntry"/>
+    <entryLink id="df22-93f6-432b-4f33" name="Battle Droids (3 Bases)" hidden="false" collective="false" import="true" targetId="75b3-8552-0cf9-a76e" type="selectionEntry"/>
+    <entryLink id="affd-047b-db8b-3c01" name="Direct Command" hidden="false" collective="false" import="true" targetId="4dda-6eb1-12a7-729f" type="selectionEntry"/>
+    <entryLink id="fd6c-779a-1a02-282e" name="Fire Control AI" hidden="false" collective="false" import="true" targetId="f8e0-cf7a-e04e-b592" type="selectionEntry"/>
+    <entryLink id="f3a1-0b46-8304-b9a7" name="Gunner Walker" hidden="false" collective="false" import="true" targetId="06d5-806f-5d03-6130" type="selectionEntry"/>
+    <entryLink id="5000-8e2f-d2c9-6770" name="Gun Platform" hidden="false" collective="false" import="true" targetId="e34e-5fd4-421c-7d9d" type="selectionEntry"/>
+    <entryLink id="acf1-61a0-267a-383b" name="Heavy Droids (2 Bases)" hidden="false" collective="false" import="true" targetId="9b69-b917-eede-c519" type="selectionEntry"/>
+    <entryLink id="4e33-c2bc-28d8-9886" name="Heavy Spider Droids (2 Bases)" hidden="false" collective="false" import="true" targetId="3bf0-3ba7-0900-88f0" type="selectionEntry"/>
+    <entryLink id="83eb-5fa1-10ef-fc87" name="Support Vehicle" hidden="false" collective="false" import="true" targetId="bee6-1186-0fe1-7a9d" type="selectionEntry"/>
+    <entryLink id="1dac-9974-fc46-cff7" name="Jamming" hidden="false" collective="false" import="true" targetId="c647-529a-8b5f-ad4d" type="selectionEntry"/>
+    <entryLink id="1d71-fb92-bf3d-991b" name="Mortar Fire" hidden="false" collective="false" import="true" targetId="bd07-fe0a-624d-11d1" type="selectionEntry"/>
+    <entryLink id="07f0-2286-17ba-ee37" name="Orbital Bombing" hidden="false" collective="false" import="true" targetId="22b3-c022-7ccc-a903" type="selectionEntry"/>
+    <entryLink id="0096-cfbf-927a-f77c" name="Orbital Deployment" hidden="false" collective="false" import="true" targetId="704c-8cee-07d9-8b44" type="selectionEntry"/>
+    <entryLink id="9707-5c54-7f16-3f8f" name="Pilot AI" hidden="false" collective="false" import="true" targetId="aef9-4e1c-08d0-80b4" type="selectionEntry"/>
+    <entryLink id="0176-2b30-2bf0-9a77" name="Satellite Uplink" hidden="false" collective="false" import="true" targetId="55f8-1337-ee69-aa58" type="selectionEntry"/>
+    <entryLink id="de0f-4c38-ce58-c21e" name="Sentient AI" hidden="false" collective="false" import="true" targetId="90b5-a198-28e6-1f06" type="selectionEntry"/>
+    <entryLink id="5ca4-c49c-0652-c8e8" name="Socrates Battle Rig (Brawler)" hidden="false" collective="false" import="true" targetId="a3d2-eb56-85ca-2196" type="selectionEntry"/>
+    <entryLink id="74e1-16cb-bce8-cabd" name="Socrates Battle Rig (Demolition)" hidden="false" collective="false" import="true" targetId="6e03-2653-c5a6-b15b" type="selectionEntry"/>
+    <entryLink id="1301-c4a0-29e5-f2cf" name="Socrates Battle Rig (Sharpshooter)" hidden="false" collective="false" import="true" targetId="7119-2ba1-68b0-06a5" type="selectionEntry"/>
+    <entryLink id="a92a-dab8-66d0-65a8" name="Software Upgrade" hidden="false" collective="false" import="true" targetId="edff-0ff3-0305-2cf4" type="selectionEntry"/>
+    <entryLink id="84ec-ba72-fad0-4aba" name="Light Spider Droids (2 Bases)" hidden="false" collective="false" import="true" targetId="75d8-62ad-37bf-e0bc" type="selectionEntry"/>
+    <entryLink id="8ab6-9392-f291-bc22" name="Strafing Run" hidden="false" collective="false" import="true" targetId="fa1e-6b02-783c-0595" type="selectionEntry"/>
+    <entryLink id="6332-7497-29df-fde4" name="Support Walker" hidden="false" collective="false" import="true" targetId="5abf-0782-b2e1-b0ae" type="selectionEntry"/>
+    <entryLink id="c3c1-d43c-87a0-fc8a" name="Spotter Drones" hidden="false" collective="false" import="true" targetId="de9f-592b-4a56-cbe5" type="selectionEntry"/>
+    <entryLink id="cb39-a55e-c159-ad87" name="Syro Runner Rig" hidden="false" collective="false" import="true" targetId="1ce3-9602-dd12-b73b" type="selectionEntry"/>
+    <entryLink id="a184-bad6-4eaa-be8c" name="Thales Fighter" hidden="false" collective="false" import="true" targetId="a624-cc91-7e52-56db" type="selectionEntry"/>
+    <entryLink id="cb26-b126-20be-cc51" name="Troop Carrier" hidden="false" collective="false" import="true" targetId="97d7-dd1a-6bb6-8ef2" type="selectionEntry"/>
+    <entryLink id="4c6b-1a48-6235-a16c" name="Zeno Battle Rig" hidden="false" collective="false" import="true" targetId="5362-40d8-fe7e-580c" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="39f1-4afb-9fe9-fdcb" name="Synthetic Pilots" hidden="false">
+      <description>Only one character per type is allowed in a Tech warband.
+On the other hand, at the beginning of each Round (after adding the Reinforcements) the Characters can be moved to any deployed Unit.
+If a Unit with a Character is destroyed, the Character can be assigned to another Unit at the beginning of the next Round.</description>
+    </rule>
+  </rules>
+</catalogue>

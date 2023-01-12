@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e3f2-23c2-5969-03f2" name="Enlisted" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="6260-040a-aefb-2c03" name="Airstrike" hidden="false" collective="false" import="true" targetId="6a5d-c01c-e69e-dedf" type="selectionEntry"/>
+    <entryLink id="7554-bb8a-e5ed-f42b" name="Armored Infantry (2 Bases)" hidden="false" collective="false" import="true" targetId="db2a-1e8a-3d3c-b02b" type="selectionEntry"/>
+    <entryLink id="4a20-01bc-88f1-fecd" name="Direct Command" hidden="false" collective="false" import="true" targetId="4dda-6eb1-12a7-729f" type="selectionEntry"/>
+    <entryLink id="303c-bfb7-390d-69b9" name="Energy Tank" hidden="false" collective="false" import="true" targetId="044d-0789-e88a-f2d9" type="selectionEntry"/>
+    <entryLink id="8379-04a9-f567-11be" name="General" hidden="false" collective="false" import="true" targetId="b8f7-5e87-49b2-1f67" type="selectionEntry"/>
+    <entryLink id="4c34-be16-f1ca-70e5" name="Guided Missile" hidden="false" collective="false" import="true" targetId="6194-7823-5219-ac0e" type="selectionEntry"/>
+    <entryLink id="71f0-3259-fa21-9f78" name="Gunner Walker" hidden="false" collective="false" import="true" targetId="06d5-806f-5d03-6130" type="selectionEntry"/>
+    <entryLink id="0ef9-db85-3859-c5c5" name="Heavy Battle Tank" hidden="false" collective="false" import="true" targetId="3b55-24eb-a639-0a31" type="selectionEntry"/>
+    <entryLink id="45c2-b11d-6b84-00fc" name="Infantry Hero" hidden="false" collective="false" import="true" targetId="b60e-8833-5f99-34b0" type="selectionEntry"/>
+    <entryLink id="c09e-e9d7-9b11-dc82" name="Infantrymen (3 Bases)" hidden="false" collective="false" import="true" targetId="4de6-6f88-657c-7d6f" type="selectionEntry"/>
+    <entryLink id="bc65-d04b-338e-f91c" name="Support Vehicle" hidden="false" collective="false" import="true" targetId="bee6-1186-0fe1-7a9d" type="selectionEntry"/>
+    <entryLink id="8525-0ff9-6c2c-f078" name="Jamming" hidden="false" collective="false" import="true" targetId="c647-529a-8b5f-ad4d" type="selectionEntry"/>
+    <entryLink id="a2f6-5852-4149-8c5e" name="Light Mortar (2 Bases)" hidden="false" collective="false" import="true" targetId="c881-5bbe-6e4a-c764" type="selectionEntry"/>
+    <entryLink id="830b-e2c7-289c-d110" name="Main Battle Tank" hidden="false" collective="false" import="true" targetId="6e4d-12ca-fde9-29e4" type="selectionEntry"/>
+    <entryLink id="3835-2c90-9c15-60c2" name="Mortar Fire" hidden="false" collective="false" import="true" targetId="bd07-fe0a-624d-11d1" type="selectionEntry"/>
+    <entryLink id="6c85-7e1c-6899-568d" name="Infantry NCO" hidden="false" collective="false" import="true" targetId="ddbe-1b0d-2818-845e" type="selectionEntry"/>
+    <entryLink id="dde4-ee35-5282-c845" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="f9d1-703b-6334-079a" type="selectionEntry"/>
+    <entryLink id="b776-c702-9aa7-c425" name="Satellite Uplink" hidden="false" collective="false" import="true" targetId="55f8-1337-ee69-aa58" type="selectionEntry"/>
+    <entryLink id="e3c5-3ca3-80af-681e" name="Scouts (2 Bases)" hidden="false" collective="false" import="true" targetId="b849-6e4e-7f1e-9fd9" type="selectionEntry"/>
+    <entryLink id="8e5d-8113-5234-e018" name="Self-Propelled Gun" hidden="false" collective="false" import="true" targetId="5d73-21e6-cb0a-908a" type="selectionEntry"/>
+    <entryLink id="9879-850c-7658-e610" name="Strafing Run" hidden="false" collective="false" import="true" targetId="fa1e-6b02-783c-0595" type="selectionEntry"/>
+    <entryLink id="cabf-4a71-431c-35b4" name="Support Walker" hidden="false" collective="false" import="true" targetId="5abf-0782-b2e1-b0ae" type="selectionEntry"/>
+    <entryLink id="3701-1043-1913-2444" name="Spotter Drones" hidden="false" collective="false" import="true" targetId="de9f-592b-4a56-cbe5" type="selectionEntry"/>
+    <entryLink id="17cb-e2dc-1ba0-c86a" name="Tank Commander" hidden="false" collective="false" import="true" targetId="3642-c262-c89c-fcb8" type="selectionEntry"/>
+    <entryLink id="b9a9-22f6-fb5a-5b90" name="Troop Carrier" hidden="false" collective="false" import="true" targetId="97d7-dd1a-6bb6-8ef2" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="8d6c-bffc-729c-3588" name="Chain of Command" hidden="false">
+      <description>When a Unit of the Enlisted activates and commands other Units to activate, the latter can choose to use their own command to activate other Units if it is lower than the first Unit.
+Example: a Unit with an Infantry hero activates and decides to activate a nearby Unit with an Infantry NCO. Since the NCO has Command 2 (while the hero has 3), it can then target another 2 Units to activate.
+This effect is applied only once per activation.</description>
+    </rule>
+  </rules>
+</catalogue>
