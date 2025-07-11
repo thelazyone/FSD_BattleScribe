@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e3f2-23c2-5969-03f2" name="Enlisted" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e3f2-23c2-5969-03f2" name="Enlisted" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="6260-040a-aefb-2c03" name="Airstrike" hidden="false" collective="false" import="true" targetId="6a5d-c01c-e69e-dedf" type="selectionEntry"/>
     <entryLink id="7554-bb8a-e5ed-f42b" name="Armored Infantry (2 Bases)" hidden="false" collective="false" import="true" targetId="db2a-1e8a-3d3c-b02b" type="selectionEntry"/>
@@ -15,7 +15,7 @@
     <entryLink id="8525-0ff9-6c2c-f078" name="Jamming" hidden="false" collective="false" import="true" targetId="c647-529a-8b5f-ad4d" type="selectionEntry"/>
     <entryLink id="a2f6-5852-4149-8c5e" name="Light Mortar (2 Bases)" hidden="false" collective="false" import="true" targetId="c881-5bbe-6e4a-c764" type="selectionEntry"/>
     <entryLink id="830b-e2c7-289c-d110" name="Main Battle Tank" hidden="false" collective="false" import="true" targetId="6e4d-12ca-fde9-29e4" type="selectionEntry"/>
-    <entryLink id="3835-2c90-9c15-60c2" name="Mortar Fire" hidden="false" collective="false" import="true" targetId="bd07-fe0a-624d-11d1" type="selectionEntry"/>
+    <entryLink id="3835-2c90-9c15-60c2" name="Cluster Strike" hidden="false" collective="false" import="true" targetId="bd07-fe0a-624d-11d1" type="selectionEntry"/>
     <entryLink id="6c85-7e1c-6899-568d" name="Infantry NCO" hidden="false" collective="false" import="true" targetId="ddbe-1b0d-2818-845e" type="selectionEntry"/>
     <entryLink id="dde4-ee35-5282-c845" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="f9d1-703b-6334-079a" type="selectionEntry"/>
     <entryLink id="b776-c702-9aa7-c425" name="Satellite Uplink" hidden="false" collective="false" import="true" targetId="55f8-1337-ee69-aa58" type="selectionEntry"/>
@@ -23,7 +23,7 @@
     <entryLink id="8e5d-8113-5234-e018" name="Self-Propelled Gun" hidden="false" collective="false" import="true" targetId="5d73-21e6-cb0a-908a" type="selectionEntry"/>
     <entryLink id="9879-850c-7658-e610" name="Strafing Run" hidden="false" collective="false" import="true" targetId="fa1e-6b02-783c-0595" type="selectionEntry"/>
     <entryLink id="cabf-4a71-431c-35b4" name="Support Walker" hidden="false" collective="false" import="true" targetId="5abf-0782-b2e1-b0ae" type="selectionEntry"/>
-    <entryLink id="3701-1043-1913-2444" name="Spotter Drones" hidden="false" collective="false" import="true" targetId="de9f-592b-4a56-cbe5" type="selectionEntry"/>
+    <entryLink id="3701-1043-1913-2444" name="Eye in the Sky" hidden="false" collective="false" import="true" targetId="de9f-592b-4a56-cbe5" type="selectionEntry"/>
     <entryLink id="17cb-e2dc-1ba0-c86a" name="Tank Commander" hidden="false" collective="false" import="true" targetId="3642-c262-c89c-fcb8" type="selectionEntry"/>
     <entryLink id="b9a9-22f6-fb5a-5b90" name="Troop Carrier" hidden="false" collective="false" import="true" targetId="97d7-dd1a-6bb6-8ef2" type="selectionEntry"/>
   </entryLinks>
