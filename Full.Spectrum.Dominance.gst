@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
     <costType id="8d93-bbb8-ec4c-36d0" name="PTS" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
@@ -2370,7 +2370,7 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
         <profile name="Infantry NCO" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="3455-ca0c-ebe5-c44e">
           <characteristics>
             <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
-            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Unpin all the Infantry Units within 2 DU. </characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Unpin all the Infantry Units within 2 DU.</characteristic>
           </characteristics>
         </profile>
         <profile name="Infantry NCO" typeId="e1c3-711e-3d42-e355" typeName="- Character -" hidden="false" id="0f40-9645-fd73-fb4b">
@@ -2392,10 +2392,64 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
         <profile name="Spotter Drones" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="5540-3b82-7206-5c47">
           <characteristics>
             <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
-Ignore all cover bonuses for opponent Units in an area with diameter 2DU. lasts until end of Round. </characteristic>
+Ignore all cover bonuses for opponent Units in an area with diameter 2DU. lasts until end of Round.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bishok Suit MK1 (Mercenary)" hidden="false" id="b34c-80e3-d278-bce4">
+      <categoryLinks>
+        <categoryLink targetId="765c-1fc7-94aa-5156" id="5f2f-b888-c423-f928" primary="true" name="Mech"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="6"/>
+      </costs>
+      <profiles>
+        <profile name="Bishok Suit MK1" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="9de8-64ef-b55f-d7fc">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(2)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="-" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="e3de-85b3-ebd2-c39b">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S1</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">MOV + S3</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">MOV + S3</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Rapid Light Railgun" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="7eab-7606-8c9c-a5af">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">4d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-4DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Power Claw" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="b06d-cc86-da24-e881">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d10</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">Contact</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Dash" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="3a22-0b7c-0a62-7f20">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Move by 3DU</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Lone Wolf" id="3c10-815f-4af1-1a93" hidden="false" type="rule" targetId="e309-3e30-d8b7-0f29"/>
+      </infoLinks>
+      <comment>Mercenary</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>

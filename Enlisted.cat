@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e3f2-23c2-5969-03f2" name="Enlisted" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e3f2-23c2-5969-03f2" name="Enlisted" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="7554-bb8a-e5ed-f42b" name="Armored Infantry (2 Bases)" hidden="false" collective="false" import="true" targetId="db2a-1e8a-3d3c-b02b" type="selectionEntry">
       <categoryLinks>
@@ -66,7 +66,7 @@
                 <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
                 <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
                 <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
-                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Left side only. </characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Left side only.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -111,7 +111,7 @@
                 <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
                 <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
                 <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
-                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Right side only. </characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Right side only.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -172,6 +172,7 @@
     <entryLink import="true" name="Troop Carrier" hidden="false" id="13f0-45c0-3f2f-53b0" type="selectionEntry" targetId="6b5e-8765-e1af-b190"/>
     <entryLink import="true" name="Mortar Fire" hidden="false" id="f755-460f-0080-78f4" type="selectionEntry" targetId="f02a-da14-1c78-1bb5"/>
     <entryLink import="true" name="Spotter Drones" hidden="false" id="2cef-ce35-85d9-385c" type="selectionEntry" targetId="5e3b-91d5-de0a-0562"/>
+    <entryLink import="true" name="Bishok Suit MK1" hidden="false" id="cddd-4318-1a89-39c1" type="selectionEntry" targetId="b34c-80e3-d278-bce4"/>
   </entryLinks>
   <rules>
     <rule id="8d6c-bffc-729c-3588" name="Chain of Command" hidden="false">
