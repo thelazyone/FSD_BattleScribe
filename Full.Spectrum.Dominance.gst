@@ -1777,7 +1777,7 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
                 <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
                 <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d12</characteristic>
                 <characteristic name="Range" typeId="4846-2873-1859-3228">Contact</characteristic>
-                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2 Ic Front only</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2 IC Front only</characteristic>
               </characteristics>
             </profile>
             <profile name="S4 Reactive Armor" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="295f-d126-0836-bc49">
