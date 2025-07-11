@@ -100,7 +100,7 @@
         <categoryLink id="c933-ecc8-8951-5f33" name="Infantry" hidden="false" targetId="6f3c-dd38-57dd-0596" primary="false"/>
         <categoryLink id="4133-5bb0-0381-93a9" name="Mech" hidden="false" targetId="765c-1fc7-94aa-5156" primary="false"/>
         <categoryLink id="0414-41c9-cb87-8263" name="Vehicle" hidden="false" targetId="10bf-6ebe-629b-d107" primary="false"/>
-        <categoryLink name="Behemoth" hidden="false" id="0f82-63c8-07fe-f4cf" targetId="78e9-4e04-e960-e114"/>
+        <categoryLink name="Behemoth" hidden="false" id="cd1b-dfd1-be4a-36c4" targetId="78e9-4e04-e960-e114"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -211,7 +211,8 @@
       <profiles>
         <profile id="6a94-c977-00e0-664c" name="Direct Command" hidden="false" typeId="5302-6018-a30d-8193" typeName="- Support -">
           <characteristics>
-            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Unpin a pinned unit under your control that can still be activated this Round. Discard this card afterwards.</characteristic>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
+Unpin a pinned unit under your control that has not yet activated this Round.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -242,7 +243,7 @@
             <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
           </characteristics>
         </profile>
-        <profile id="c858-ab2b-ea00-ea2e" name="Energy Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="c858-ab2b-ea00-ea2e" name="S2 Energy Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d8</characteristic>
@@ -250,7 +251,7 @@
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC</characteristic>
           </characteristics>
         </profile>
-        <profile id="354e-8e33-5fba-5816" name="Light MG" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="354e-8e33-5fba-5816" name="S1 Light MG" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
@@ -299,7 +300,7 @@
         <profile id="8b78-d6b2-9fc1-d5bd" name="-" hidden="false" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --">
           <characteristics>
             <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1+1</characteristic>
-            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Roll 4 ADs from the Spent pile.</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Roll up to 4 ADs from the Spent pile.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -314,7 +315,8 @@
       <profiles>
         <profile id="3640-1420-db4b-156a" name="Guided Missile" hidden="false" typeId="5302-6018-a30d-8193" typeName="- Support -">
           <characteristics>
-            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">The target must be in line of sight wth one Scouts Unit and cannot be an Infantry Unit</characteristic>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">The target Unit must be within 8DU and Line of Sight from an Unpinned Scout Unit.
+The target Unit must be a Vehicle or Mech Unit.</characteristic>
           </characteristics>
         </profile>
         <profile id="5c1b-77df-ef1b-5b09" name="Missile" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
@@ -353,7 +355,7 @@
             <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
           </characteristics>
         </profile>
-        <profile id="944c-848c-7adf-3eaf" name="Light Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="944c-848c-7adf-3eaf" name="S1 Light Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d8</characteristic>
@@ -361,10 +363,10 @@
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1</characteristic>
           </characteristics>
         </profile>
-        <profile id="f8d4-9647-5293-0394" name="Rocket Pod" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="f8d4-9647-5293-0394" name="S2 Rocket Pod" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1</characteristic>
-            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d8</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d6</characteristic>
             <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC,AP1</characteristic>
           </characteristics>
@@ -441,7 +443,7 @@
             <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
           </characteristics>
         </profile>
-        <profile id="beea-572b-b5c8-8cf8" name="Light MG" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="beea-572b-b5c8-8cf8" name="S1 Light MG" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
@@ -449,7 +451,7 @@
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
           </characteristics>
         </profile>
-        <profile id="7e7c-4312-0f14-6c4f" name="Heavy Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="7e7c-4312-0f14-6c4f" name="S2 Heavy Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d10</characteristic>
@@ -457,10 +459,10 @@
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2</characteristic>
           </characteristics>
         </profile>
-        <profile id="8144-233a-3d1f-b186" name="Reactive Armor (Trigger)" hidden="false" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --">
+        <profile id="8144-233a-3d1f-b186" name="S3 Reactive Armor (Trigger)" hidden="false" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --">
           <characteristics>
             <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
-            <characteristic name="Special" typeId="59db-73ef-ac41-6037">+2 Def against one attack</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Lost when targeted by any attack to gain +3 Def.</characteristic>
           </characteristics>
         </profile>
         <profile id="3d24-e6fe-bfc0-7451" name="-" hidden="false" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---">
@@ -553,7 +555,7 @@
         <profile id="b236-fd5a-675d-23a4" name="Infantry Hero" hidden="false" typeId="e1c3-711e-3d42-e355" typeName="- Character -">
           <characteristics>
             <characteristic name="Cmd" typeId="8e8a-bb87-3c5d-29db">3</characteristic>
-            <characteristic name="Ability" typeId="f241-af24-e9a1-39a5">The Hero Unit and all the infantry Units activated with the Character&apos;s command can perform one extra free shooting action per turn.</characteristic>
+            <characteristic name="Ability" typeId="f241-af24-e9a1-39a5">The Unit the Hero is attached to and all the Infantry Units activated with the Heroe&apos;s Command can perform one extra Action per Round.The Infantry Hero must be assigned to an Infantery Unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -585,7 +587,7 @@
         <profile id="78c0-ef0f-55b2-644b" name="Grenade" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
-            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d6</characteristic>
             <characteristic name="Range" typeId="4846-2873-1859-3228">1DU</characteristic>
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC, AP1</characteristic>
           </characteristics>
@@ -608,7 +610,7 @@
             <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
           </characteristics>
         </profile>
-        <profile id="e316-423b-3f68-abb9" name="Light MG" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="e316-423b-3f68-abb9" name="S1 Light MG" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
@@ -616,7 +618,7 @@
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
           </characteristics>
         </profile>
-        <profile id="d4bd-56df-fbab-5fd7" name="Light Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="d4bd-56df-fbab-5fd7" name="S2 Light Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d6</characteristic>
@@ -647,8 +649,7 @@
         <profile id="7fb1-6961-b9ca-c124" name="Jamming" hidden="false" typeId="5302-6018-a30d-8193" typeName="- Support -">
           <characteristics>
             <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
-Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.
-</characteristic>
+Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -680,7 +681,7 @@ Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.
         <profile id="c3cc-1d8a-62ca-5ff0" name="Setup" hidden="false" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --">
           <characteristics>
             <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
-            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Required for S3</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Required for S3. Lost when Pinned or when moving.</characteristic>
           </characteristics>
         </profile>
         <profile id="4a6c-a38b-008b-445d" name="Light Mortar" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
@@ -696,7 +697,7 @@ Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.
         <categoryLink id="a61d-f2d3-d3e4-e1df" name="Infantry" hidden="false" targetId="6f3c-dd38-57dd-0596" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6e4d-12ca-fde9-29e4" name="Main Battle Tank" hidden="false" collective="false" import="true" type="model">
@@ -709,7 +710,7 @@ Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.
             <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
           </characteristics>
         </profile>
-        <profile id="97dd-087f-9cc6-9c57" name="Light MG" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="97dd-087f-9cc6-9c57" name="S1 Light MG" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d6</characteristic>
@@ -717,7 +718,7 @@ Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
           </characteristics>
         </profile>
-        <profile id="24b7-e66d-b304-9841" name="Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="24b7-e66d-b304-9841" name="S2 Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d8</characteristic>
@@ -764,28 +765,6 @@ Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.
       </categoryLinks>
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="5"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ddbe-1b0d-2818-845e" name="Infantry NCO" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="43d8-62f9-6acb-d46d" name="Infantry NCO" hidden="false" typeId="e1c3-711e-3d42-e355" typeName="- Character -">
-          <characteristics>
-            <characteristic name="Cmd" typeId="8e8a-bb87-3c5d-29db">2</characteristic>
-            <characteristic name="Ability" typeId="f241-af24-e9a1-39a5"/>
-          </characteristics>
-        </profile>
-        <profile id="9579-6cf2-3f3d-e2ce" name="-" hidden="false" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --">
-          <characteristics>
-            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
-            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Unpin all the Infantry Units within 2DU</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <categoryLinks>
-        <categoryLink id="9b66-fdf1-14c2-5e77" name="-Characters-" hidden="false" targetId="495f-d2b1-d32b-198f" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="22b3-c022-7ccc-a903" name="Orbital Bombing" hidden="false" collective="false" import="true" type="upgrade">
@@ -859,18 +838,18 @@ Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.
             <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
           </characteristics>
         </profile>
-        <profile id="78b6-bba3-aa84-b406" name="Setup" hidden="false" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --">
+        <profile id="78b6-bba3-aa84-b406" name="S1 Setup" hidden="false" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --">
           <characteristics>
             <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
-            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Required for S2</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Required for S2. Lost when moving.</characteristic>
           </characteristics>
         </profile>
-        <profile id="83a1-a40f-c3be-0f2b" name="Artillery Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="83a1-a40f-c3be-0f2b" name="S2 Artillery Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6+5-6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d8</characteristic>
             <characteristic name="Range" typeId="4846-2873-1859-3228">3-6DU</characteristic>
-            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Area 2</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Area 2, IC</characteristic>
           </characteristics>
         </profile>
         <profile id="e08a-5f4c-5762-2d99" name="-" hidden="false" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---">
@@ -888,7 +867,7 @@ Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.
         <categoryLink id="3d8f-5f2f-d58c-7e2c" name="Vehicle" hidden="false" targetId="10bf-6ebe-629b-d107" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="6"/>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="7"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="55f8-1337-ee69-aa58" name="Satellite Uplink" hidden="false" collective="false" import="true" type="upgrade">
@@ -896,8 +875,7 @@ Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.
         <profile id="02be-1fff-ad71-04f0" name="Satellite Uplink" hidden="false" typeId="5302-6018-a30d-8193" typeName="- Support -">
           <characteristics>
             <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
-Roll up to three Activation Dice from the spent pile.
-</characteristic>
+Roll up to three Activation Dice from the spent pile.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -929,15 +907,14 @@ Roll up to three Activation Dice from the spent pile.
         <profile id="670a-927d-1b94-5b5d" name="Grenade" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
-            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d6</characteristic>
             <characteristic name="Range" typeId="4846-2873-1859-3228">1DU</characteristic>
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, IC</characteristic>
           </characteristics>
         </profile>
-        <profile id="3d17-9fbe-022d-1487" name="Infiltration" hidden="false" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --">
+        <profile name="Scouts (2 Bases)" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="f5e9-491d-111c-3ad1">
           <characteristics>
-            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
-            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Deploy &gt;2DU from enemy</characteristic>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">If Deploying from Reserve, you can spend a Ready AD with value 1-3 to Deploy the Scout anywhere on the table, further than 2DU from enemy Units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -958,18 +935,18 @@ Roll up to three Activation Dice from the spent pile.
             <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
             <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
             <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(3)</characteristic>
-            <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
           </characteristics>
         </profile>
-        <profile id="05f3-92b1-1c79-d6d0" name="Setup" hidden="false" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --">
+        <profile id="05f3-92b1-1c79-d6d0" name="S1 Setup" hidden="false" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --">
           <characteristics>
             <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
-            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Required for S2</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Required for S2. Lost when moving</characteristic>
           </characteristics>
         </profile>
-        <profile id="2544-5299-d31b-0486" name="Artillery Cannon" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="2544-5299-d31b-0486" name="S2 High-Energy Gun" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
-            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6+4-6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d12</characteristic>
             <characteristic name="Range" typeId="4846-2873-1859-3228">3-6DU</characteristic>
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, IC</characteristic>
@@ -990,7 +967,7 @@ Roll up to three Activation Dice from the spent pile.
         <categoryLink id="94ec-3f90-0653-fe9b" name="Vehicle" hidden="false" targetId="10bf-6ebe-629b-d107" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="6"/>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="7"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="90b5-a198-28e6-1f06" name="Sentient AI" hidden="false" collective="false" import="true" type="upgrade">
@@ -1188,8 +1165,7 @@ The unit gain the Reactive trait.</characteristic>
         <profile id="11a8-8647-cdd3-cc7e" name="Software Upgrade" hidden="false" typeId="5302-6018-a30d-8193" typeName="- Support -">
           <characteristics>
             <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use
-Switch two Characters from two Units you control, or move one Character from a Unit to another.
-</characteristic>
+Switch two Characters from two Units you control, or move one Character from a Unit to another.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1264,7 +1240,7 @@ The Heavy Minigun targets once Every unit whose bases touch it.</characteristic>
             <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
           </characteristics>
         </profile>
-        <profile id="375b-ba70-cb2b-9c18" name="Light Minigun" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="375b-ba70-cb2b-9c18" name="S1 Light Minigun" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
@@ -1272,10 +1248,10 @@ The Heavy Minigun targets once Every unit whose bases touch it.</characteristic>
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
           </characteristics>
         </profile>
-        <profile id="9e58-14e4-11c5-319a" name="Rocket Pod" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
+        <profile id="9e58-14e4-11c5-319a" name="S2 Rocket Pod" hidden="false" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1</characteristic>
-            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d8</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d6</characteristic>
             <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
             <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC, AP1</characteristic>
           </characteristics>
@@ -1344,7 +1320,7 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="323e-11fd-c924-a5dc" name="Jamming 1" hidden="false" targetId="abae-8372-1412-e3da" type="rule"/>
+        <infoLink id="323e-11fd-c924-a5dc" name="Jamming X" hidden="false" targetId="abae-8372-1412-e3da" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7d79-452c-7bd6-9a3a" name="Mech" hidden="false" targetId="765c-1fc7-94aa-5156" primary="true"/>
@@ -1529,7 +1505,7 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Core" hidden="false" id="f4a3-5c4a-2dd0-4c02" defaultAmount="1">
           <profiles>
-            <profile name="-" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="9bc1-eb0a-6ecd-bf43">
+            <profile name="Core" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="9bc1-eb0a-6ecd-bf43">
               <characteristics>
                 <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
                 <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S1</characteristic>
@@ -1589,12 +1565,12 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
             <categoryLink targetId="78e9-4e04-e960-e114" id="7970-8365-1e8d-2741" primary="true" name="Behemoth"/>
           </categoryLinks>
           <profiles>
-            <profile name="-" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="7ae3-14e7-f4ef-061d">
+            <profile name="Plato Light Armour" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="7ae3-14e7-f4ef-061d">
               <characteristics>
                 <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">MOV</characteristic>
                 <characteristic name="2" typeId="6a72-57fd-b1f6-2672">MOV</characteristic>
                 <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM</characteristic>
-                <characteristic name="4" typeId="5137-88be-d46c-1325">ARM</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">ARM(2)</characteristic>
                 <characteristic name="5" typeId="554d-170c-4471-ede5">S1</characteristic>
                 <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
               </characteristics>
@@ -1636,7 +1612,7 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Core" hidden="false" id="cb4a-4d84-080e-7738" defaultAmount="1">
           <profiles>
-            <profile name="-" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="27c4-8a11-3852-175e">
+            <profile name="Core" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="27c4-8a11-3852-175e">
               <characteristics>
                 <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
                 <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S1</characteristic>
@@ -1692,7 +1668,7 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Left Legs" hidden="false" id="c5aa-0863-df38-8204" defaultAmount="1">
           <profiles>
-            <profile name="-" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="3888-bfa4-d435-c561">
+            <profile name="Left Legs" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="3888-bfa4-d435-c561">
               <characteristics>
                 <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">MOV</characteristic>
                 <characteristic name="2" typeId="6a72-57fd-b1f6-2672">MOV</characteristic>
@@ -1727,7 +1703,7 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Right Legs" hidden="false" id="82b1-9403-5b4c-ca5b" defaultAmount="1">
           <profiles>
-            <profile name="-" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="5022-9eb0-3b8f-b1c4">
+            <profile name="Right Legs" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="5022-9eb0-3b8f-b1c4">
               <characteristics>
                 <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">MOV</characteristic>
                 <characteristic name="2" typeId="6a72-57fd-b1f6-2672">MOV</characteristic>
@@ -1762,11 +1738,11 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Plato Front Armour" hidden="false" id="abdb-2405-f574-9c22" defaultAmount="1">
           <profiles>
-            <profile name="-" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="e418-c7a0-0cb6-fd18">
+            <profile name="Plato Front Armour" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="e418-c7a0-0cb6-fd18">
               <characteristics>
                 <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
                 <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
-                <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM(2)</characteristic>
                 <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
                 <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
                 <characteristic name="6" typeId="1d51-7333-32e7-9be4">S3</characteristic>
@@ -1804,7 +1780,7 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
                 <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2 Ic Front only</characteristic>
               </characteristics>
             </profile>
-            <profile name="Reactive Armor" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="295f-d126-0836-bc49">
+            <profile name="S4 Reactive Armor" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="295f-d126-0836-bc49">
               <characteristics>
                 <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
                 <characteristic name="Special" typeId="59db-73ef-ac41-6037">Use when attacked. +2 Defense. Needs to be loaded</characteristic>
@@ -1919,7 +1895,7 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
             <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
           </characteristics>
         </profile>
-        <profile name="Load-Unload Troops" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="9304-a586-063d-5e35">
+        <profile name="Load or Unload Troops" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="9304-a586-063d-5e35">
           <characteristics>
             <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
             <characteristic name="Special" typeId="59db-73ef-ac41-6037">Carry one Infantry Unit</characteristic>
@@ -2083,6 +2059,343 @@ Until the end of the Turn, all enemy Units do not benefit from any Cover bonus.<
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="7"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Land Cruiser" hidden="false" id="d6fa-e6ec-eb2e-6763">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="78e9-4e04-e960-e114" id="92fe-bb00-3e5a-5fcd" primary="true" name="Behemoth"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Core" hidden="false" id="47cb-aa4d-cc11-72fc" defaultAmount="1">
+          <infoLinks>
+            <infoLink name="Large Target" id="782c-c1fe-57ec-df0c" hidden="false" type="rule" targetId="c747-3784-4477-0a24"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Core" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="4d15-afb5-944b-49d7">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM(2)</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S3</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Core" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="4298-dfee-8cf3-2287">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">4</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(3)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 HQ Update" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="18ad-715f-c02d-f0ae">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Roll up to 2 Unspent Activation Dice</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S2 Load Cannon" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="b704-3663-7946-64e6">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037"/>
+              </characteristics>
+            </profile>
+            <profile name="S3 Super-Heavy Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="6265-6084-f459-2189">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d12</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">2-6DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3 Requires S2 Front only</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>1 System on 180° Front</comment>
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="9d37-5efd-08b8-a359" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7204-1c92-9d19-bf8b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7204-1c92-9d19-bf8b-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Land Cruiser Armor" hidden="false" id="820d-ec5d-ad0f-b340" defaultAmount="1">
+          <profiles>
+            <profile name="Land Cruiser Armor" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="27bd-e1b6-4328-3204">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">2+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(4)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Land Cruiser Armor" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="bc01-b047-9eca-1fc9">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">MOV</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">MOV</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">ARM</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S1</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Side Autoturret (Left)" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="0145-7de0-c431-2557">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+              </characteristics>
+            </profile>
+            <profile name="S2 Side Autoturret (Right)" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="2ebb-f13a-677b-974c">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+              </characteristics>
+            </profile>
+            <profile name="S3 Reactive Armor" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="5f0a-b1d1-7c26-b450">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Use when attacked. +2 Defense. Needs to be loaded</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>System 180° Front Light Behemoth</comment>
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="ce6e-a615-ee7f-8889" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0942-ed40-aaa4-dd51-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0942-ed40-aaa4-dd51-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Land Battleship" hidden="false" id="f145-49ef-36a6-afe0">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="78e9-4e04-e960-e114" id="a8fa-6a2c-e9c8-bf12" primary="true" name="Behemoth"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Core" hidden="false" id="e131-4939-2cd7-c76b" defaultAmount="1">
+          <profiles>
+            <profile name="Core" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="b94b-38a0-3b92-ef41">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">MOV</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">S2</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">WPN</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">WPN</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Core" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="e0a3-3595-8b9a-f865">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">5</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">2+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(4)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 HQ Dispatch" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="4b4c-1fba-eecb-381b">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2+1-2</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Roll up to 4 unspennt Activation Dice.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S2 Control Tower" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="2ec1-c83c-480f-4919">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">All commanded units can perform one extra action</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="e420-4297-31de-91f6" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <comment>1 System on Front, Left and Right. One WPN</comment>
+          <infoLinks>
+            <infoLink name="Slow" id="bd10-6027-ea4e-6f95" hidden="false" type="rule" targetId="8752-7741-e0a2-de54"/>
+            <infoLink name="Large Target" id="572f-016b-ccb5-287a" hidden="false" type="rule" targetId="c747-3784-4477-0a24"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3815-4603-f01a-a0cc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3815-4603-f01a-a0cc-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Front" id="559a-0160-075f-2f02" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee35-d8be-b092-727f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee35-d8be-b092-727f-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Land BS Troop Pod" hidden="false" id="9d5c-4e5e-0de7-a951">
+              <profiles>
+                <profile name="Land BS Troop Pod" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="0df8-9c45-4387-f0cf">
+                  <characteristics>
+                    <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+                    <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                    <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM(2)</characteristic>
+                    <characteristic name="4" typeId="5137-88be-d46c-1325">ARM(2)</characteristic>
+                    <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+                    <characteristic name="6" typeId="1d51-7333-32e7-9be4">S3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Land BS Troop Pod" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="8776-5a72-64df-4238">
+                  <characteristics>
+                    <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+                    <characteristic name="Def" typeId="4eca-9bad-8c57-3071">2+</characteristic>
+                    <characteristic name="Save" typeId="44f9-475a-0170-0083">d12(2)</characteristic>
+                    <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="S1 Infantry Deployment" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="e95e-6804-af04-1144">
+                  <characteristics>
+                    <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
+                    <characteristic name="Special" typeId="59db-73ef-ac41-6037"/>
+                  </characteristics>
+                </profile>
+                <profile name="S3 Fast Infantry Deployment" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="8080-ccf9-ec17-6b00">
+                  <characteristics>
+                    <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
+                    <characteristic name="Special" typeId="59db-73ef-ac41-6037">The deployed unit performs one extra Movement.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="S2 Infantry Deployment" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="88b0-1b21-db9b-da0d">
+                  <characteristics>
+                    <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
+                    <characteristic name="Special" typeId="59db-73ef-ac41-6037"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink targetId="78e9-4e04-e960-e114" id="e45a-93c0-2ecd-e044" primary="true" name="Behemoth"/>
+              </categoryLinks>
+              <comment>Front</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Land BS Gun Pod" hidden="false" id="51f7-ae85-a7c3-f250">
+              <categoryLinks>
+                <categoryLink targetId="78e9-4e04-e960-e114" id="221d-ffa3-49dd-b17c" primary="true" name="Behemoth"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Land BS Gun Pod" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="044f-004e-be1a-b8ec">
+                  <characteristics>
+                    <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+                    <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                    <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+                    <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
+                    <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+                    <characteristic name="6" typeId="1d51-7333-32e7-9be4">S3</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Land BS Gun Pod" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="e787-a92a-dc6e-55a4">
+                  <characteristics>
+                    <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+                    <characteristic name="Def" typeId="4eca-9bad-8c57-3071">2+</characteristic>
+                    <characteristic name="Save" typeId="44f9-475a-0170-0083">d12(2)</characteristic>
+                    <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="S1 Main Quad Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="64f5-ed57-9122-567b">
+                  <characteristics>
+                    <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+                    <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">4d8</characteristic>
+                    <characteristic name="Range" typeId="4846-2873-1859-3228">1-4DU</characteristic>
+                    <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+                  </characteristics>
+                </profile>
+                <profile name="S2 Reactive Armor" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="4027-dd5e-4901-5ef5">
+                  <characteristics>
+                    <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+                    <characteristic name="Special" typeId="59db-73ef-ac41-6037">Use when attacked. +2 Defense. Needs to be loaded</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="S3 Reactive Armor" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="76a8-f9b9-adee-1f4d">
+                  <characteristics>
+                    <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+                    <characteristic name="Special" typeId="59db-73ef-ac41-6037">Use when attacked. +2 Defense. Needs to be loaded</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="cb40-c88c-2215-9802" primary="true" name="Behemoth"/>
+          </categoryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mortar Fire" hidden="false" id="f02a-da14-1c78-1bb5">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="6"/>
+      </costs>
+      <profiles>
+        <profile name="Bombing" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="9139-89cd-2a0a-56e4">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1-6+1-6+1-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">-</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Area 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mortar Fire" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="a266-dbc9-4dd2-9576">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">You can have only one Mortar Fire card in your list.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="4415-a07a-797c-d430" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2497-5dbf-3de4-a115" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Infantry NCO" hidden="false" id="69bc-de32-5eca-6df6">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="fbc6-0ffc-1452-888b" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infantry NCO" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="3455-ca0c-ebe5-c44e">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Unpin all the Infantry Units within 2 DU. </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Infantry NCO" typeId="e1c3-711e-3d42-e355" typeName="- Character -" hidden="false" id="0f40-9645-fd73-fb4b">
+          <characteristics>
+            <characteristic name="Cmd" typeId="8e8a-bb87-3c5d-29db">2</characteristic>
+            <characteristic name="Ability" typeId="f241-af24-e9a1-39a5"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spotter Drones" hidden="false" id="5e3b-91d5-de0a-0562">
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="2e44-4429-85ba-44b3" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+      </costs>
+      <profiles>
+        <profile name="Spotter Drones" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="5540-3b82-7206-5c47">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
+Ignore all cover bonuses for opponent Units in an area with diameter 2DU. lasts until end of Round. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>

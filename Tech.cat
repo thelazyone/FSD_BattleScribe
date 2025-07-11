@@ -5,8 +5,8 @@
     <entryLink id="df22-93f6-432b-4f33" name="Battle Robots (3 Bases)" hidden="false" collective="false" import="true" targetId="75b3-8552-0cf9-a76e" type="selectionEntry"/>
     <entryLink id="fd6c-779a-1a02-282e" name="Fire Control AI" hidden="false" collective="false" import="true" targetId="f8e0-cf7a-e04e-b592" type="selectionEntry"/>
     <entryLink id="5000-8e2f-d2c9-6770" name="Gun Platform" hidden="false" collective="false" import="true" targetId="e34e-5fd4-421c-7d9d" type="selectionEntry"/>
-    <entryLink id="acf1-61a0-267a-383b" name="Heavy Droids (2 Bases)" hidden="false" collective="false" import="true" targetId="9b69-b917-eede-c519" type="selectionEntry"/>
-    <entryLink id="4e33-c2bc-28d8-9886" name="Heavy Spider Droids (2 Bases)" hidden="false" collective="false" import="true" targetId="3bf0-3ba7-0900-88f0" type="selectionEntry"/>
+    <entryLink id="acf1-61a0-267a-383b" name="Heavy Robots (2 Bases)" hidden="false" collective="false" import="true" targetId="9b69-b917-eede-c519" type="selectionEntry"/>
+    <entryLink id="4e33-c2bc-28d8-9886" name="Heavy Spider Drones (2 Bases)" hidden="false" collective="false" import="true" targetId="3bf0-3ba7-0900-88f0" type="selectionEntry"/>
     <entryLink id="1dac-9974-fc46-cff7" name="Jamming" hidden="false" collective="false" import="true" targetId="c647-529a-8b5f-ad4d" type="selectionEntry"/>
     <entryLink id="07f0-2286-17ba-ee37" name="Orbital Bombing" hidden="false" collective="false" import="true" targetId="22b3-c022-7ccc-a903" type="selectionEntry"/>
     <entryLink id="0096-cfbf-927a-f77c" name="Orbital Deployment" hidden="false" collective="false" import="true" targetId="704c-8cee-07d9-8b44" type="selectionEntry"/>
@@ -21,20 +21,24 @@
     <entryLink id="74e1-16cb-bce8-cabd" name="Socrates Battle Rig (Demolition)" hidden="false" collective="false" import="true" targetId="6e03-2653-c5a6-b15b" type="selectionEntry"/>
     <entryLink id="1301-c4a0-29e5-f2cf" name="Socrates Battle Rig (Sharpshooter)" hidden="false" collective="false" import="true" targetId="7119-2ba1-68b0-06a5" type="selectionEntry"/>
     <entryLink id="a92a-dab8-66d0-65a8" name="Software Upgrade" hidden="false" collective="false" import="true" targetId="edff-0ff3-0305-2cf4" type="selectionEntry"/>
-    <entryLink id="84ec-ba72-fad0-4aba" name="Light Spider Droids (2 Bases)" hidden="false" collective="false" import="true" targetId="75d8-62ad-37bf-e0bc" type="selectionEntry"/>
+    <entryLink id="84ec-ba72-fad0-4aba" name="Light Spider Drones (2 Bases)" hidden="false" collective="false" import="true" targetId="75d8-62ad-37bf-e0bc" type="selectionEntry"/>
     <entryLink id="c3c1-d43c-87a0-fc8a" name="Eye in the Sky" hidden="false" collective="false" import="true" targetId="de9f-592b-4a56-cbe5" type="selectionEntry"/>
     <entryLink id="cb39-a55e-c159-ad87" name="Syro Runner Rig" hidden="false" collective="false" import="true" targetId="1ce3-9602-dd12-b73b" type="selectionEntry"/>
     <entryLink id="a184-bad6-4eaa-be8c" name="Thales Fighter" hidden="false" collective="false" import="true" targetId="a624-cc91-7e52-56db" type="selectionEntry"/>
-    <entryLink id="cb26-b126-20be-cc51" name="Troop Carrier" hidden="false" collective="false" import="true" targetId="97d7-dd1a-6bb6-8ef2" type="selectionEntry"/>
+    <entryLink id="cb26-b126-20be-cc51" name="Gorgias Transport" hidden="false" collective="false" import="true" targetId="97d7-dd1a-6bb6-8ef2" type="selectionEntry"/>
     <entryLink id="4c6b-1a48-6235-a16c" name="Zeno Battle Rig" hidden="false" collective="false" import="true" targetId="5362-40d8-fe7e-580c" type="selectionEntry"/>
     <entryLink import="true" name="Plato Light Crawler" hidden="false" id="dd06-ccb9-5326-79b5" type="selectionEntry" targetId="11b5-24b9-78bb-ca07">
       <categoryLinks>
         <categoryLink targetId="78e9-4e04-e960-e114" id="7cd1-3321-1698-908f" primary="true" name="Behemoth"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Plato Platform" hidden="false" id="7ea3-b651-419e-487d" type="selectionEntry" targetId="e800-0e7a-f8f1-3686"/>
+    <entryLink import="true" name="Plato Platform" hidden="false" id="7ea3-b651-419e-487d" type="selectionEntry" targetId="e800-0e7a-f8f1-3686">
+      <categoryLinks>
+        <categoryLink targetId="78e9-4e04-e960-e114" id="9964-ec98-8863-d0f8" primary="true" name="Behemoth"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Cluster Strike" hidden="false" id="3b64-584f-a5b8-6fc0" type="selectionEntry" targetId="bd07-fe0a-624d-11d1"/>
-    <entryLink import="true" name="Solon Battle Tank" hidden="false" id="75f5-7486-aff4-461c" type="selectionEntry" targetId="fa57-9692-092f-a06f"/>
+    <entryLink import="true" name="Solon Battle Tank (Cannon)" hidden="false" id="75f5-7486-aff4-461c" type="selectionEntry" targetId="fa57-9692-092f-a06f"/>
     <entryLink import="true" name="Solon Battle Tank (Minigun)" hidden="false" id="c538-c372-58ca-bd1c" type="selectionEntry" targetId="bd8c-76fd-9ab7-8e12"/>
   </entryLinks>
   <rules>

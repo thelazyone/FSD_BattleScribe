@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e3f2-23c2-5969-03f2" name="Enlisted" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e3f2-23c2-5969-03f2" name="Enlisted" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
-    <entryLink id="6260-040a-aefb-2c03" name="Airstrike" hidden="false" collective="false" import="true" targetId="6a5d-c01c-e69e-dedf" type="selectionEntry"/>
-    <entryLink id="7554-bb8a-e5ed-f42b" name="Armored Infantry (2 Bases)" hidden="false" collective="false" import="true" targetId="db2a-1e8a-3d3c-b02b" type="selectionEntry"/>
+    <entryLink id="7554-bb8a-e5ed-f42b" name="Armored Infantry (2 Bases)" hidden="false" collective="false" import="true" targetId="db2a-1e8a-3d3c-b02b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="6f3c-dd38-57dd-0596" id="4738-aa0d-ffe5-7802" primary="true" name="Infantry"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="4a20-01bc-88f1-fecd" name="Direct Command" hidden="false" collective="false" import="true" targetId="4dda-6eb1-12a7-729f" type="selectionEntry"/>
     <entryLink id="303c-bfb7-390d-69b9" name="Energy Tank" hidden="false" collective="false" import="true" targetId="044d-0789-e88a-f2d9" type="selectionEntry"/>
     <entryLink id="8379-04a9-f567-11be" name="General" hidden="false" collective="false" import="true" targetId="b8f7-5e87-49b2-1f67" type="selectionEntry"/>
@@ -12,20 +15,163 @@
     <entryLink id="45c2-b11d-6b84-00fc" name="Infantry Hero" hidden="false" collective="false" import="true" targetId="b60e-8833-5f99-34b0" type="selectionEntry"/>
     <entryLink id="c09e-e9d7-9b11-dc82" name="Infantrymen (3 Bases)" hidden="false" collective="false" import="true" targetId="4de6-6f88-657c-7d6f" type="selectionEntry"/>
     <entryLink id="bc65-d04b-338e-f91c" name="Support Vehicle" hidden="false" collective="false" import="true" targetId="bee6-1186-0fe1-7a9d" type="selectionEntry"/>
-    <entryLink id="8525-0ff9-6c2c-f078" name="Jamming" hidden="false" collective="false" import="true" targetId="c647-529a-8b5f-ad4d" type="selectionEntry"/>
     <entryLink id="a2f6-5852-4149-8c5e" name="Light Mortar (2 Bases)" hidden="false" collective="false" import="true" targetId="c881-5bbe-6e4a-c764" type="selectionEntry"/>
     <entryLink id="830b-e2c7-289c-d110" name="Main Battle Tank" hidden="false" collective="false" import="true" targetId="6e4d-12ca-fde9-29e4" type="selectionEntry"/>
-    <entryLink id="3835-2c90-9c15-60c2" name="Cluster Strike" hidden="false" collective="false" import="true" targetId="bd07-fe0a-624d-11d1" type="selectionEntry"/>
-    <entryLink id="6c85-7e1c-6899-568d" name="Infantry NCO" hidden="false" collective="false" import="true" targetId="ddbe-1b0d-2818-845e" type="selectionEntry"/>
+    <entryLink id="6c85-7e1c-6899-568d" name="Infantry NCO" hidden="false" collective="false" import="true" targetId="69bc-de32-5eca-6df6" type="selectionEntry"/>
     <entryLink id="dde4-ee35-5282-c845" name="Rocket Launcher" hidden="false" collective="false" import="true" targetId="f9d1-703b-6334-079a" type="selectionEntry"/>
-    <entryLink id="b776-c702-9aa7-c425" name="Satellite Uplink" hidden="false" collective="false" import="true" targetId="55f8-1337-ee69-aa58" type="selectionEntry"/>
     <entryLink id="e3c5-3ca3-80af-681e" name="Scouts (2 Bases)" hidden="false" collective="false" import="true" targetId="b849-6e4e-7f1e-9fd9" type="selectionEntry"/>
     <entryLink id="8e5d-8113-5234-e018" name="Self-Propelled Gun" hidden="false" collective="false" import="true" targetId="5d73-21e6-cb0a-908a" type="selectionEntry"/>
     <entryLink id="9879-850c-7658-e610" name="Strafing Run" hidden="false" collective="false" import="true" targetId="fa1e-6b02-783c-0595" type="selectionEntry"/>
     <entryLink id="cabf-4a71-431c-35b4" name="Support Walker" hidden="false" collective="false" import="true" targetId="5abf-0782-b2e1-b0ae" type="selectionEntry"/>
-    <entryLink id="3701-1043-1913-2444" name="Eye in the Sky" hidden="false" collective="false" import="true" targetId="de9f-592b-4a56-cbe5" type="selectionEntry"/>
     <entryLink id="17cb-e2dc-1ba0-c86a" name="Tank Commander" hidden="false" collective="false" import="true" targetId="3642-c262-c89c-fcb8" type="selectionEntry"/>
-    <entryLink id="b9a9-22f6-fb5a-5b90" name="Troop Carrier" hidden="false" collective="false" import="true" targetId="97d7-dd1a-6bb6-8ef2" type="selectionEntry"/>
+    <entryLink import="true" name="Land Battleship" hidden="false" id="5f19-a3c2-05ba-d9e0" type="selectionEntry" targetId="f145-49ef-36a6-afe0">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Land BS Left Plates" hidden="false" id="cf77-37e6-d456-b53d" defaultAmount="1">
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="1751-83af-c6ce-1499" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5181-1a53-cc7d-6767-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5181-1a53-cc7d-6767-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Land BS Left Plates" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="6274-f3dc-699d-b067">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">MOV</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Land BS Left Plates" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="1520-1fe8-0536-6740">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">2+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(4)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Light MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="74ed-b5d3-4f01-5636">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+              </characteristics>
+            </profile>
+            <profile name="S2 Side Autoturret" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="ba35-557c-896b-cf6b">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Left side only. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Land BS Right Plates" hidden="false" id="38ee-b7c3-0b64-113f" defaultAmount="1">
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="3902-c96c-1218-809c" targetId="78e9-4e04-e960-e114" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4fc-1018-8758-e8fb-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4fc-1018-8758-e8fb-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Land BS Right Plates" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="6d97-4724-5b5d-0e4f">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">MOV</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Land BS Right Plates" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="ce5b-99c1-4cbc-a1a1">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">2+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(4)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Light MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="d8e5-6650-9fc1-e541">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+              </characteristics>
+            </profile>
+            <profile name="S2 Side Autoturret" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="839c-9034-ebf4-0f60">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Right side only. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="WPN" id="9e60-0c92-b56d-c82b" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9eba-5efb-d959-e901-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9eba-5efb-d959-e901-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Weapons Array" hidden="false" id="c922-96a6-ad41-061e" defaultAmount="1">
+              <categoryLinks>
+                <categoryLink targetId="78e9-4e04-e960-e114" id="c700-e1b3-4976-6c72" primary="true" name="Behemoth"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="S2 Super-Heavy Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="3493-9642-410a-4d58">
+                  <characteristics>
+                    <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+                    <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d12</characteristic>
+                    <characteristic name="Range" typeId="4846-2873-1859-3228">2-6DU</characteristic>
+                    <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3 Front only</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="S1 Load Rockets" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="9888-3a1c-027a-76a4">
+                  <characteristics>
+                    <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">6</characteristic>
+                    <characteristic name="Special" typeId="59db-73ef-ac41-6037">Load Rockets</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="S3 Super-Heavy Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="9a9e-1d3d-8d8a-6259">
+                  <characteristics>
+                    <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+                    <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d12</characteristic>
+                    <characteristic name="Range" typeId="4846-2873-1859-3228">2-6DU</characteristic>
+                    <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3 Front only</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="S4 Rocket Storm x8" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="1e5c-9ec5-0219-49c2">
+                  <characteristics>
+                    <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1+1+6+6</characteristic>
+                    <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d8</characteristic>
+                    <characteristic name="Range" typeId="4846-2873-1859-3228">1-4</characteristic>
+                    <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2 Requires S1 loaded on both slots</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="9915-d4b3-dc26-5c3a" primary="true" name="Behemoth"/>
+          </categoryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </entryLink>
+    <entryLink import="true" name="Land Cruiser" hidden="false" id="c1c4-bac3-0d7d-7d04" type="selectionEntry" targetId="d6fa-e6ec-eb2e-6763"/>
+    <entryLink import="true" name="Troop Carrier" hidden="false" id="13f0-45c0-3f2f-53b0" type="selectionEntry" targetId="6b5e-8765-e1af-b190"/>
+    <entryLink import="true" name="Mortar Fire" hidden="false" id="f755-460f-0080-78f4" type="selectionEntry" targetId="f02a-da14-1c78-1bb5"/>
+    <entryLink import="true" name="Spotter Drones" hidden="false" id="2cef-ce35-85d9-385c" type="selectionEntry" targetId="5e3b-91d5-de0a-0562"/>
   </entryLinks>
   <rules>
     <rule id="8d6c-bffc-729c-3588" name="Chain of Command" hidden="false">
