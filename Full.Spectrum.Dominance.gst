@@ -2448,8 +2448,12 @@ Ignore all cover bonuses for opponent Units in an area with diameter 2DU. lasts 
       </profiles>
       <infoLinks>
         <infoLink name="Lone Wolf" id="3c10-815f-4af1-1a93" hidden="false" type="rule" targetId="e309-3e30-d8b7-0f29"/>
+        <infoLink name="Unique" id="aeb3-0a75-9c41-63d4" hidden="false" type="rule" targetId="7ebc-5821-568b-629e"/>
       </infoLinks>
       <comment>Mercenary</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8f8b-b693-360a-f87c" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -2567,6 +2571,10 @@ When saving from a hit, the target Unit may only roll X dice less, to a minimum 
     </rule>
     <rule name="Nimble" id="5551-1899-7ea1-290b" hidden="false">
       <description>Any attack targeting the Unit that would roll dice higher than D8 rolls D8 instead.</description>
+    </rule>
+    <rule name="Unique" id="7ebc-5821-568b-629e" hidden="false">
+      <description>You can field only one copy of this Unit in your
+warband.</description>
     </rule>
   </sharedRules>
 </gameSystem>
