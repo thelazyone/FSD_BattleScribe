@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="4" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
     <costType id="8d93-bbb8-ec4c-36d0" name="PTS" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
@@ -47,6 +47,14 @@
         <characteristicType id="59db-73ef-ac41-6037" name="Special"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="- Warden -" id="a1d0-94a6-f0a6-cdd9" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Def" id="4f80-2983-67ac-bcb4"/>
+        <characteristicType name="Save" id="1152-b76b-31a4-3d81"/>
+        <characteristicType name="Move" id="341c-df23-1cc5-9ede"/>
+        <characteristicType name="Ability" id="17ef-0829-c25d-9d7d"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="495f-d2b1-d32b-198f" name="-Characters-" hidden="false"/>
@@ -91,6 +99,15 @@
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Warden" id="2219-6e2b-a7a1-e551" hidden="false">
+      <rules>
+        <rule name="Wardens" id="7f98-39c8-c3a2-7f42" hidden="false">
+          <description>Rules for Wardens can be found at page 71 in the Rulebook</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Cyclops" id="5d46-73d1-a36a-db97" hidden="false"/>
+    <categoryEntry name="Centaur" id="4249-1998-c074-c3d1" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="68f8-4857-0079-b8ee" name="Force" hidden="false">
@@ -101,6 +118,7 @@
         <categoryLink id="4133-5bb0-0381-93a9" name="Mech" hidden="false" targetId="765c-1fc7-94aa-5156" primary="false"/>
         <categoryLink id="0414-41c9-cb87-8263" name="Vehicle" hidden="false" targetId="10bf-6ebe-629b-d107" primary="false"/>
         <categoryLink name="Behemoth" hidden="false" id="cd1b-dfd1-be4a-36c4" targetId="78e9-4e04-e960-e114"/>
+        <categoryLink name="Warden" hidden="false" id="66a2-d457-9ab2-b477" targetId="2219-6e2b-a7a1-e551" type="categoryEntry"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -2397,7 +2415,7 @@ Ignore all cover bonuses for opponent Units in an area with diameter 2DU. lasts 
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bishok Suit MK1 (Mercenary)" hidden="false" id="b34c-80e3-d278-bce4">
+    <selectionEntry type="model" import="true" name="Bishok Suit MK1 (Mercenary)" hidden="false" id="b34c-80e3-d278-bce4">
       <categoryLinks>
         <categoryLink targetId="765c-1fc7-94aa-5156" id="5f2f-b888-c423-f928" primary="true" name="Mech"/>
       </categoryLinks>
@@ -2454,6 +2472,900 @@ Ignore all cover bonuses for opponent Units in an area with diameter 2DU. lasts 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8f8b-b693-360a-f87c" includeChildSelections="true"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Centaur Flamer" hidden="false" id="9696-a7b2-3363-6d09">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="12"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="765c-1fc7-94aa-5156" id="8e84-903e-ef8a-8826" primary="true" name="Mech"/>
+        <categoryLink targetId="4249-1998-c074-c3d1" id="f53b-ea3f-e498-7af4" primary="false" name="Centaur"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Centaur Flamer" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="ba55-ef8f-894e-5fab">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S1</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S2</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S2</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">S3</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">MOV</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Centaur Flamer" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="fcff-a518-1fb4-a204">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">3</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(4)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Shoulder Rockets x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="5da3-1fe2-59d6-3e6c">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1-2</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Heavy Flamer x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="41e0-c40a-8517-e04a">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6+4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">5d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, IC Every Unit in the 2DU line from the shooter towards the target and beyond is hit by 2d8 AP1 IC, front only</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Hell" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="62f5-106d-082b-4246">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6+6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">4d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3DU to every Unit in LoS within in the frontal arc</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, IC, Requires 4 Wardens within 1DU </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Capable" id="62d1-14c5-21e8-0a31" hidden="false" type="rule" targetId="eb11-0096-9522-0deb"/>
+        <infoLink name="Slow" id="cfc0-d6d9-6cf5-374a" hidden="false" type="rule" targetId="8752-7741-e0a2-de54"/>
+        <infoLink name="Warden Guide 4" id="c297-3eee-a1cc-286a" hidden="false" type="rule" targetId="6170-c872-49f8-6c07"/>
+        <infoLink name="Unwavering" id="e330-f650-7476-b8fe" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Centaur Gunslinger" hidden="false" id="6c67-968c-51e5-707a">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="12"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mech" hidden="false" id="99e1-2ec3-9683-3ffd" targetId="765c-1fc7-94aa-5156" primary="true"/>
+        <categoryLink targetId="4249-1998-c074-c3d1" id="34e5-507f-5f72-8325" primary="false" name="Centaur"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Centaur Gunslinger" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="6a06-1224-568c-4508">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S1</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S2</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S2</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">S3</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">MOV</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Centaur Gunslinger" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="5fae-4833-d0c1-4d33">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">3</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(4)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Shoulder Rockets x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="20c2-375a-0308-3c35">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1-2</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Rotary Gun  x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="f910-282b-6dce-5292">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d10</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-4DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2, IC, front only</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Bullet Storm x6" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="a496-3395-7811-657f">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1+6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2, Every Unit in LoS within 3DU in the frontal arc is considered as Pinned. Requires 4 Wardens within 1DU </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Capable" id="e77e-8c29-8350-0104" hidden="false" type="rule" targetId="eb11-0096-9522-0deb"/>
+        <infoLink name="Slow" id="a765-9399-1d04-d1c5" hidden="false" type="rule" targetId="8752-7741-e0a2-de54"/>
+        <infoLink name="Warden Guide 4" id="b0cf-e809-d9e9-1305" hidden="false" type="rule" targetId="6170-c872-49f8-6c07"/>
+        <infoLink name="Unwavering" id="2bba-90ab-8e8d-6779" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Concrete Patch" hidden="false" id="6368-3de0-6263-9684">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="b497-8e2d-2fe1-31fc" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Concrete Patch" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="1776-c7d7-1710-bb90">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
+Repair one damage to one Mech Unit that has at least two Wardens within 1DU</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cyclop Flamer" hidden="false" id="93b5-880e-97e7-cc69">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="7"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="765c-1fc7-94aa-5156" id="4549-8808-6bee-e8a1" primary="true" name="Mech"/>
+        <categoryLink targetId="5d46-73d1-a36a-db97" id="70d2-d936-82b7-d8ee" primary="false" name="Cyclops"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cyclop Flamer" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="f97f-136c-7742-d5e1">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S2</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S2</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S3</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cyclop Flamer" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="1158-fb9d-59aa-89ee">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(4)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Load Tanks" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="8080-5fce-f056-3712">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Required for S2, lost upon use</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Flamethrower" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="c329-9a13-c75e-106e">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">4d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, IC, Every Unit in the 2DU line from the shooter towards the target and beyond is hit by 2d8 AP1 IC</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Fireball" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="3051-ffc9-508f-e029">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Area 1, IC, Requires 2 Wardens within 1DU</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwavering" id="9c0d-d98f-c115-b029" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+        <infoLink name="Warden Guide 2" id="6db1-44a5-1ffa-9548" hidden="false" type="rule" targetId="b00f-c002-0647-189d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cyclop Guardian" hidden="false" id="e334-af25-83cd-4b2c">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mech" hidden="false" id="49ff-a344-71ce-c7b4" targetId="765c-1fc7-94aa-5156" primary="true"/>
+        <categoryLink targetId="5d46-73d1-a36a-db97" id="0f5d-7dcf-796a-f623" primary="false" name="Cyclops"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cyclop Guardian" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="5e8b-9036-d88e-73f7">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S1</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">ARM</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cyclop Guardian" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="bc5c-8ba3-ffaf-1ccc">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(4)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Defensive Fire" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="ffe7-ec57-65b1-e3dc">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, Requires 2 Wardens within 1DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Hand-Held Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="94c7-fbe0-d450-e47e">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Raise Shield" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="084c-b4d8-6c1b-4014">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Lost when performing any action except S3. Ignore damage to ARM</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwavering" id="7720-04ec-8e38-df6f" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+        <infoLink name="Warden Guide 2" id="badf-f314-7829-872e" hidden="false" type="rule" targetId="b00f-c002-0647-189d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cyclop Gunslinger" hidden="false" id="39db-fd04-e666-93b2">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="7"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mech" hidden="false" id="bf71-3ca2-4469-3864" targetId="765c-1fc7-94aa-5156" primary="true"/>
+        <categoryLink targetId="5d46-73d1-a36a-db97" id="79b2-fdbe-4f69-c764" primary="false" name="Cyclops"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cyclop Gunslinger" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="a04a-ca53-4f6c-bdf1">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S2</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S2</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S3</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cyclop Gunslinger" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="5532-789f-3802-c7a2">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(4)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Start Rotary Gun" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="8955-21c6-4175-5551">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Required for S2-S3, Lost if S2 is not used during an Activation</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Rotary Gun x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="f45c-6256-7c06-7706">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-4DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Suppression Fire" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="5e86-8df4-8181-80b9">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1-2</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-4DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Suppress, Requires 1 Warden within 1DU</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwavering" id="c3ee-628e-421f-fd64" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+        <infoLink name="Warden Guide 2" id="15b2-c4f7-d3b4-9072" hidden="false" type="rule" targetId="b00f-c002-0647-189d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cyclop Hitter" hidden="false" id="eb1a-bccf-fa87-e304">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="7"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mech" hidden="false" id="590c-1862-7b0a-5f81" targetId="765c-1fc7-94aa-5156" primary="true"/>
+        <categoryLink targetId="5d46-73d1-a36a-db97" id="4218-0248-5020-12cf" primary="false" name="Cyclops"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cyclop Hitter" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="b1bd-2388-bb4f-6d4e">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S1</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">ARM</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cyclop Hitter" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="94a8-5791-b31b-4369">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(4)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Charge" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="9a90-5085-86eb-11e5">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1-2</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d10</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">Contact</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Move 2DU, then do the attack, Requires 3 Wardens within 1DU. </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Tungsten Blade" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="2940-abda-64db-94d9">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d10</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">Contact</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Raise Shield" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="f2ad-8cf4-d1b2-5c82">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Lost when performing any action except for 1DU Movement actions. Ignore damage to ARM</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwavering" id="a3da-4960-5480-44c5" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+        <infoLink name="Warden Guide 2" id="8905-f341-e426-a494" hidden="false" type="rule" targetId="b00f-c002-0647-189d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cyclop Welder" hidden="false" id="adbb-48e4-8e58-10b3">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="7"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mech" hidden="false" id="43d8-a60a-3a88-5f3b" targetId="765c-1fc7-94aa-5156" primary="true"/>
+        <categoryLink targetId="5d46-73d1-a36a-db97" id="ef44-231d-6f5d-1ce5" primary="false" name="Cyclops"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cyclop Welder" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="fc39-d4ea-464f-03cd">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S2</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S2</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S3</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cyclop Welder" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="afa6-a2a2-ba9c-0264">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(4)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Cluster Shot" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="ff67-e9a3-220c-e119">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1-3</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, IC, Choose one target for each Warden within 1DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Plasma Welder" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="dae2-c409-f10f-4dcb">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Plasma Welder" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="7387-174f-af20-e1c8">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwavering" id="b673-68de-8cf6-3563" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+        <infoLink name="Warden Guide 4" id="d522-4169-6e2d-a5dd" hidden="false" type="rule" targetId="6170-c872-49f8-6c07"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cyclop Worker" hidden="false" id="40cf-326a-e3dc-1322">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="4"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mech" hidden="false" id="2bfe-477c-9444-1856" targetId="765c-1fc7-94aa-5156" primary="true"/>
+        <categoryLink targetId="5d46-73d1-a36a-db97" id="e8f1-d16d-18ba-7baa" primary="false" name="Cyclops"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cyclop Worker" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="f2f3-ae76-8bbd-78b8">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S2</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S2</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">ARM</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">PIN</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cyclop Worker" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="344c-7349-bcef-354b">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(4)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Smash" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="db22-928d-f0fc-f4cb">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">4d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">Contact</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Teamwork" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="5196-918a-421b-9db3">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Gains the Engineer Ability. Lost when Pinned or Activated. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwavering" id="71af-1f3e-c5cb-9285" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+        <infoLink name="Warden Guide 2" id="10f1-6d34-462d-1202" hidden="false" type="rule" targetId="b00f-c002-0647-189d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Defective Riveting" hidden="false" id="fcc2-292b-b991-e6b9">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="a569-e748-de4b-29a0" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Defective Riveting" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="a1f7-3499-5057-459e">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
+Destroy one Mech you control: Units within 1DU from it
+receive a 2d8 AP2 attack. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Falling Debris" hidden="false" id="fc8d-ad9a-262e-51b9">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="4"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="3e26-c207-bbe1-2743" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Falling Debris" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="e22f-1a9e-1229-4537">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">The attack can originate from any unpinned Cyclop in base contact with a Traversable, Broken or Fragile terrain element. </characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Boulder" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="bd03-7a8d-4d83-aff7">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1 IC</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="High Octane Refill" hidden="false" id="9918-36c9-b9fb-9978">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
+      </costs>
+      <profiles>
+        <profile name="High Octane Refill" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="9141-bbb1-7377-17eb">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
+All Cyclops that have at least two Wardens within 1DU gain the Capable alility until the end otf the Round.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="f0b5-117f-78e0-e084" primary="true" name="-Support-"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Human Crew x2" hidden="false" id="ec1b-eff5-a293-39b6">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="1"/>
+      </costs>
+      <profiles>
+        <profile name="Human Crew" typeId="a1d0-94a6-f0a6-cdd9" typeName="- Warden -" hidden="false" id="7cc0-af9c-0774-8465">
+          <characteristics>
+            <characteristic name="Def" typeId="4f80-2983-67ac-bcb4">4+</characteristic>
+            <characteristic name="Save" typeId="1152-b76b-31a4-3d81">d6</characteristic>
+            <characteristic name="Move" typeId="341c-df23-1cc5-9ede">2DU</characteristic>
+            <characteristic name="Ability" typeId="17ef-0829-c25d-9d7d">Counts as Infantry for any cover bouns provided by terrain elements</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="f44d-c7c4-6fd8-9628" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="380f-a7c3-98f4-105c" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="380f-a7c3-98f4-105c">
+          <conditions>
+            <condition type="greaterThan" value="19" field="8d93-bbb8-ec4c-36d0" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="20" repeats="1" field="8d93-bbb8-ec4c-36d0" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="380f-a7c3-98f4-105c">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="ff71-5143-28b5-e966" shared="true" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="2219-6e2b-a7a1-e551" childId="ff71-5143-28b5-e966" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="380f-a7c3-98f4-105c">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="b2bf-52b3-c2d4-f6c1" shared="true" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="2219-6e2b-a7a1-e551" childId="b2bf-52b3-c2d4-f6c1" shared="true" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="380f-a7c3-98f4-105c">
+          <conditions>
+            <condition type="greaterThan" value="1" field="selections" scope="roster" childId="5d46-73d1-a36a-db97" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="roster" childId="5d46-73d1-a36a-db97" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="380f-a7c3-98f4-105c">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="4249-1998-c074-c3d1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="4249-1998-c074-c3d1" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="2219-6e2b-a7a1-e551" id="b3c7-b24e-cd20-bbc1" primary="true" name="Warden"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ifrit x2" hidden="false" id="ff71-5143-28b5-e966">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
+      </costs>
+      <profiles>
+        <profile name="Ifrit" typeId="a1d0-94a6-f0a6-cdd9" typeName="- Warden -" hidden="false" id="951b-3e24-eda6-bad9">
+          <characteristics>
+            <characteristic name="Def" typeId="4f80-2983-67ac-bcb4">4+</characteristic>
+            <characteristic name="Save" typeId="1152-b76b-31a4-3d81">d8(2)</characteristic>
+            <characteristic name="Move" typeId="341c-df23-1cc5-9ede">2DU</characteristic>
+            <characteristic name="Ability" typeId="17ef-0829-c25d-9d7d">Whenever a Reclaimed Mech within 1DU receives a Hit, you can destroy the Ifrit to reroll the save.
+
+
+Whenever a Reclaimed Mech within 1DU performs an attack, the Ifrit perfomrs a 2d6 2DU attack towards any target within range and LoS.</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="f44d-c7c4-6fd8-9628" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="ca96-017e-3e43-28e4" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="ca96-017e-3e43-28e4">
+          <conditions>
+            <condition type="greaterThan" value="19" field="8d93-bbb8-ec4c-36d0" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="20" repeats="1" field="8d93-bbb8-ec4c-36d0" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="ca96-017e-3e43-28e4">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="b2bf-52b3-c2d4-f6c1" shared="true" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="b2bf-52b3-c2d4-f6c1" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="ca96-017e-3e43-28e4">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="ec1b-eff5-a293-39b6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="ec1b-eff5-a293-39b6" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="ca96-017e-3e43-28e4">
+          <conditions>
+            <condition type="greaterThan" value="1" field="selections" scope="roster" childId="5d46-73d1-a36a-db97" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="roster" childId="5d46-73d1-a36a-db97" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="ca96-017e-3e43-28e4">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="4249-1998-c074-c3d1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="4249-1998-c074-c3d1" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Warden" hidden="false" id="e6ec-2b7c-4f01-9f9b" targetId="2219-6e2b-a7a1-e551" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Imp x2" hidden="false" id="b2bf-52b3-c2d4-f6c1">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+      </costs>
+      <profiles>
+        <profile name="Imp" typeId="a1d0-94a6-f0a6-cdd9" typeName="- Warden -" hidden="false" id="b218-cfb4-30ba-2de4">
+          <characteristics>
+            <characteristic name="Def" typeId="4f80-2983-67ac-bcb4">4+</characteristic>
+            <characteristic name="Save" typeId="1152-b76b-31a4-3d81">d8(2)</characteristic>
+            <characteristic name="Move" typeId="341c-df23-1cc5-9ede">2DU</characteristic>
+            <characteristic name="Ability" typeId="17ef-0829-c25d-9d7d">Whenever a Reclaimed Mech within 1DU receives a Hit, you can destroy the Ifrit to reroll the save.
+</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="f44d-c7c4-6fd8-9628" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="af3d-c085-b1f0-f89c" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="af3d-c085-b1f0-f89c">
+          <conditions>
+            <condition type="greaterThan" value="19" field="8d93-bbb8-ec4c-36d0" scope="roster" childId="any" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="20" repeats="1" field="8d93-bbb8-ec4c-36d0" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="af3d-c085-b1f0-f89c">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="ff71-5143-28b5-e966" shared="true" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="ff71-5143-28b5-e966" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="af3d-c085-b1f0-f89c">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="ec1b-eff5-a293-39b6" shared="true" includeChildForces="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="ec1b-eff5-a293-39b6" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="af3d-c085-b1f0-f89c">
+          <conditions>
+            <condition type="greaterThan" value="1" field="selections" scope="roster" childId="5d46-73d1-a36a-db97" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="2" repeats="1" field="selections" scope="roster" childId="5d46-73d1-a36a-db97" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="af3d-c085-b1f0-f89c">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="4249-1998-c074-c3d1" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="4249-1998-c074-c3d1" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Warden" hidden="false" id="4c61-5f05-6e33-645f" targetId="2219-6e2b-a7a1-e551" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Logistic Shift" hidden="false" id="2241-d0ef-eed1-926b">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="86cb-dc95-f445-6951" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Logistic Shift" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="b6d3-59df-5afb-f0dd">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
+Move all Wardens by up to 3DU</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="One-Eyed Beam" hidden="false" id="0be8-377b-2d9e-9b69">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="f533-4b17-d24a-5f71" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="One-Eyed Beam" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="8be1-8ae1-e6b0-8e51">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
+Up to three Cyclop Units shoot a 1d8 1-5DU IC 
+Laser beam to any target in their LoS. Each of the chosen Cyclops must be within 1 DU from a Warden.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Troll Sentinel" hidden="false" id="4b91-c06c-7b3d-0d83">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="4"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="765c-1fc7-94aa-5156" id="0204-7c3e-f3a9-7079" primary="true" name="Mech"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Troll Sentinel" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="cdd5-8783-574f-082b">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S2</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Troll Sentinel" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="f627-b657-1c05-f134">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(3)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light Hand Gun" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="d686-412e-6454-1a98">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Laser Beam x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="29a7-a3a2-51c5-2b4a">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1-3</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-5DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC, Requires 1 Warden within 1DU</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwavering" id="9b90-9418-d5f6-37c3" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+        <infoLink name="Warden Guide 1" id="2d51-97b0-e736-42d9" hidden="false" type="rule" targetId="e857-bbfd-37ad-0ad3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Troll Sniper" hidden="false" id="c72b-f1f7-337d-8793">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mech" hidden="false" id="e7ed-05d8-5416-9855" targetId="765c-1fc7-94aa-5156" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Troll Sniper" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="dc19-7513-fdf6-5683">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S3</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">MOV</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Troll Sniper" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="9a96-1656-2d20-e3e4">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(3)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Long Range Gun" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="990d-094a-a7e3-5277">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d12</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2-5DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, Lethal, Target must be from S1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Cloaking" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="a1a3-3f09-7962-d6e0">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Lost when performing any action, Camouflage</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Acquire Target" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="d36d-b626-46a5-63cb">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Declare a Target. Required for S2. Lost when moving.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwavering" id="52fe-920a-fe29-2b8a" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Troll Worker" hidden="false" id="484b-e7d6-7fdd-21c9">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="4"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mech" hidden="false" id="3cdd-21b8-6c2c-8a52" targetId="765c-1fc7-94aa-5156" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Troll Worker" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="fa9e-15eb-a1ae-e401">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S2</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">ARM</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">PIN</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Troll Worker" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="65be-17f5-ca04-eb40">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(3)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light Hand Gun" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="cbce-97cf-2b79-7b80">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">Contact</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Teamwork" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="bd87-4cdd-9b94-f23d">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Gains the Engineer Ability. Lost when Pinned or Activated.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwavering" id="fd74-d47d-6dad-ad8d" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+        <infoLink name="Warden Guide 1" id="4e10-dcef-57c4-72b4" hidden="false" type="rule" targetId="e857-bbfd-37ad-0ad3"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -2575,6 +3487,34 @@ When saving from a hit, the target Unit may only roll X dice less, to a minimum 
     <rule name="Unique" id="7ebc-5821-568b-629e" hidden="false">
       <description>You can field only one copy of this Unit in your
 warband.</description>
+    </rule>
+    <rule name="Unwavering" id="8186-1ebd-90e4-581d" hidden="false">
+      <description>The Unit can perform Actions while Pinned rinstead
+of being forced to Unpin as its first Action.
+Any other penalty, such as the inability to Command,
+React or interact with objectives, still
+applies.</description>
+    </rule>
+    <rule name="Warden Guide 4" id="6170-c872-49f8-6c07" hidden="false">
+      <description>When a Reclaimed Unit with the Warden Guide
+ability performs a Movement Action, it can
+move up to 4 Wardens within 1 DU from it,
+placing them anywhere within 1 DU from them
+at the end of the movement.</description>
+    </rule>
+    <rule name="Warden Guide 2" id="b00f-c002-0647-189d" hidden="false">
+      <description>When a Reclaimed Unit with the Warden Guide
+ability performs a Movement Action, it can
+move up to 2 Wardens within 1 DU from it,
+placing them anywhere within 1 DU from them
+at the end of the movement.</description>
+    </rule>
+    <rule name="Warden Guide 1" id="e857-bbfd-37ad-0ad3" hidden="false">
+      <description>When a Reclaimed Unit with the Warden Guide
+ability performs a Movement Action, it can
+move up to 1 Wardens within 1 DU from it,
+placing them anywhere within 1 DU from them
+at the end of the movement.</description>
     </rule>
   </sharedRules>
 </gameSystem>

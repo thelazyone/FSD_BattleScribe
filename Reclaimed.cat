@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="c29a-ac23-b5d6-6b06" name="Reclaimed" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <rules>
+    <rule name="Objective Assist" id="5497-7fbc-70e8-66ab" hidden="false">
+      <description>Any Unpinned Reclaimed Mech Unit that has at
+least one Warden within 1 DU can control and
+contest objectives without needing to spend an
+Action.</description>
+    </rule>
+    <rule name="Engineer" id="6419-0058-3135-2717" hidden="false">
+      <description>A Unit with the Engineer special rule counts as
+Warden in terms of requirements to perform
+Special Actions or to activate Support Cards.
+Mech Units with the Engineer ability still require
+a separate Warden to fulfill any requirement
+needing a Warden within range; they cannot
+count as their own Warden for these purposes.</description>
+    </rule>
+  </rules>
+  <entryLinks>
+    <entryLink import="true" name="Centaur Flamer" hidden="false" id="c2ca-03f8-e4da-beb4" type="selectionEntry" targetId="9696-a7b2-3363-6d09"/>
+    <entryLink import="true" name="Centaur Gunslinger" hidden="false" id="a7af-8da9-7824-f298" type="selectionEntry" targetId="6c67-968c-51e5-707a"/>
+    <entryLink import="true" name="Concrete Patch" hidden="false" id="2680-042c-84b7-6404" type="selectionEntry" targetId="6368-3de0-6263-9684"/>
+    <entryLink import="true" name="Cyclop Guardian" hidden="false" id="ff18-921d-3fdb-296a" type="selectionEntry" targetId="e334-af25-83cd-4b2c"/>
+    <entryLink import="true" name="Cyclop Gunslinger" hidden="false" id="d3dc-94ac-576d-65eb" type="selectionEntry" targetId="39db-fd04-e666-93b2"/>
+    <entryLink import="true" name="Cyclop Hitter" hidden="false" id="92e8-e4bc-61c6-2e84" type="selectionEntry" targetId="eb1a-bccf-fa87-e304"/>
+    <entryLink import="true" name="Cyclop Welder" hidden="false" id="38d0-49d6-c9b6-2848" type="selectionEntry" targetId="adbb-48e4-8e58-10b3"/>
+    <entryLink import="true" name="Cyclop Worker" hidden="false" id="0645-1346-6058-f0c2" type="selectionEntry" targetId="40cf-326a-e3dc-1322"/>
+    <entryLink import="true" name="Defective Riveting" hidden="false" id="d256-a548-c937-0ccc" type="selectionEntry" targetId="fcc2-292b-b991-e6b9"/>
+    <entryLink import="true" name="Falling Debris" hidden="false" id="1e5b-800d-d0b7-7a87" type="selectionEntry" targetId="fc8d-ad9a-262e-51b9"/>
+    <entryLink import="true" name="High Octane Refill" hidden="false" id="b7a8-013b-a8ca-4fec" type="selectionEntry" targetId="9918-36c9-b9fb-9978"/>
+    <entryLink import="true" name="Human Crew" hidden="false" id="5e5b-a443-a7f6-b924" type="selectionEntry" targetId="ec1b-eff5-a293-39b6"/>
+    <entryLink import="true" name="Ifrit x2" hidden="false" id="506b-c37d-aac2-98f3" type="selectionEntry" targetId="ff71-5143-28b5-e966"/>
+    <entryLink import="true" name="Imp x2" hidden="false" id="f696-cdf0-af49-9b2a" type="selectionEntry" targetId="b2bf-52b3-c2d4-f6c1"/>
+    <entryLink import="true" name="Cyclop Flamer" hidden="false" id="5cee-1bf0-2f73-3c71" type="selectionEntry" targetId="93b5-880e-97e7-cc69"/>
+    <entryLink import="true" name="Logistic Shift" hidden="false" id="f868-f669-75cb-82ca" type="selectionEntry" targetId="2241-d0ef-eed1-926b"/>
+    <entryLink import="true" name="One-Eyed Beam" hidden="false" id="5fd5-6c01-23fc-5d8b" type="selectionEntry" targetId="0be8-377b-2d9e-9b69"/>
+    <entryLink import="true" name="Troll Sentinel" hidden="false" id="5748-049f-5bee-cafd" type="selectionEntry" targetId="4b91-c06c-7b3d-0d83"/>
+    <entryLink import="true" name="Troll Sniper" hidden="false" id="4961-7530-165e-39c6" type="selectionEntry" targetId="c72b-f1f7-337d-8793"/>
+    <entryLink import="true" name="Troll Worker" hidden="false" id="0f30-140d-a2ed-2170" type="selectionEntry" targetId="484b-e7d6-7fdd-21c9"/>
+  </entryLinks>
+</catalogue>
