@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="6" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="7" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
     <costType id="8d93-bbb8-ec4c-36d0" name="PTS" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
@@ -5320,54 +5320,6 @@ Until the end of the Round, all terrain can be traveres by your infantry Units a
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="5"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Character" hidden="false" id="38dc-c14e-006e-8b91" defaultAmount="1">
-          <profiles>
-            <profile name="Union Representative" typeId="e1c3-711e-3d42-e355" typeName="- Character -" hidden="false" id="e1e2-d34a-50ae-7760">
-              <characteristics>
-                <characteristic name="Cmd" typeId="8e8a-bb87-3c5d-29db">If assigned to a Unit gain +2 Cmd</characteristic>
-                <characteristic name="Ability" typeId="f241-af24-e9a1-39a5">Perform one extra action per Activation</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="495f-d2b1-d32b-198f" id="de3b-9abc-c42e-e001" primary="true" name="-Characters-"/>
-          </categoryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa67-d9e5-f138-cc1c" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="fa67-d9e5-f138-cc1c">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="cdab-4566-e7cb-a43f" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Support" hidden="false" id="cdab-4566-e7cb-a43f">
-          <categoryLinks>
-            <categoryLink targetId="47db-22cd-fa5b-7bfb" id="0f17-b8e5-4a46-739e" primary="true" name="-Support-"/>
-          </categoryLinks>
-          <profiles>
-            <profile name="Union Orders" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="d68b-d3ce-12c2-6ce6">
-              <characteristics>
-                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
-                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Unpin a Unit OR Reroll two Ready ADs OR Roll one Spent AD</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7eb-6fc8-b758-63d0" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="f7eb-6fc8-b758-63d0">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="38dc-c14e-006e-8b91" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cb1c-22dd-a4aa-43d5"/>
       </constraints>
@@ -5378,6 +5330,42 @@ Until the end of the Round, all terrain can be traveres by your infantry Units a
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Type" id="f1ae-788e-4095-b1da" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Character" hidden="false" id="38dc-c14e-006e-8b91" defaultAmount="1">
+              <profiles>
+                <profile name="Union Representative" typeId="e1c3-711e-3d42-e355" typeName="- Character -" hidden="false" id="e1e2-d34a-50ae-7760">
+                  <characteristics>
+                    <characteristic name="Cmd" typeId="8e8a-bb87-3c5d-29db">If assigned to a Unit gain +2 Cmd</characteristic>
+                    <characteristic name="Ability" typeId="f241-af24-e9a1-39a5">Perform one extra action per Activation</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="-Characters-" hidden="false" id="de3b-9abc-c42e-e001" targetId="495f-d2b1-d32b-198f" primary="true"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Support" hidden="false" id="cdab-4566-e7cb-a43f">
+              <categoryLinks>
+                <categoryLink name="-Support-" hidden="false" id="0f17-b8e5-4a46-739e" targetId="47db-22cd-fa5b-7bfb" primary="true"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Union Orders" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="d68b-d3ce-12c2-6ce6">
+                  <characteristics>
+                    <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
+                    <characteristic name="Special" typeId="59db-73ef-ac41-6037">Unpin a Unit OR Reroll two Ready ADs OR Roll one Spent AD</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd37-c9be-597b-9522" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b973-285b-eed9-3f4a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Minenibbler" hidden="false" id="93f5-3c06-1c85-4b6f">
       <categoryLinks>
@@ -5424,12 +5412,12 @@ Until the end of the Round, all terrain can be traveres by your infantry Units a
                 <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
                 <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d8</characteristic>
                 <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
-                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">You can shoot on both sides. Sides only. </characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">You can shoot on both sides. Sides only.</characteristic>
               </characteristics>
             </profile>
             <profile name="Burner Tokens" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="b610-285c-0d73-8972">
               <characteristics>
-                <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Start the game with 3 Burner Tokens. </characteristic>
+                <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Start the game with 3 Burner Tokens.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5471,7 +5459,7 @@ Until the end of the Round, all terrain can be traveres by your infantry Units a
                 <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
                 <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d12</characteristic>
                 <characteristic name="Range" typeId="4846-2873-1859-3228">1DU</characteristic>
-                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, short range counts as Contact. </characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, short range counts as Contact.</characteristic>
               </characteristics>
             </profile>
             <profile name="S2 Claw (right)" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="7c28-3197-88ab-81bb">
@@ -5479,7 +5467,7 @@ Until the end of the Round, all terrain can be traveres by your infantry Units a
                 <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
                 <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d12</characteristic>
                 <characteristic name="Range" typeId="4846-2873-1859-3228">1DU</characteristic>
-                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, short range counts as Contact. </characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, short range counts as Contact.</characteristic>
               </characteristics>
             </profile>
             <profile name="S1 Rampage (alternative)" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="7684-0906-591d-d2fc">
@@ -5538,7 +5526,7 @@ Until the end of the Round, all terrain can be traveres by your infantry Units a
             </profile>
             <profile name="Burner Token" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="dbb8-c59b-70a5-9844">
               <characteristics>
-                <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Start the game with 2/3 Burner Tokens. </characteristic>
+                <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Start the game with 2/3 Burner Tokens.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5652,7 +5640,7 @@ Until the end of the Round, all terrain can be traveres by your infantry Units a
                 <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
                 <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d12</characteristic>
                 <characteristic name="Range" typeId="4846-2873-1859-3228">1DU</characteristic>
-                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, short range counts as Contact. </characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, short range counts as Contact.</characteristic>
               </characteristics>
             </profile>
             <profile name="S3 Rampage (alternative)" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="64ce-3a42-5cf7-4fac">
@@ -5700,7 +5688,7 @@ Until the end of the Round, all terrain can be traveres by your infantry Units a
                 <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
                 <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d12</characteristic>
                 <characteristic name="Range" typeId="4846-2873-1859-3228">1DU</characteristic>
-                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, short range counts as Contact. </characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, short range counts as Contact.</characteristic>
               </characteristics>
             </profile>
             <profile name="S2 Rampage (alternative)" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="9e27-f7d0-096f-8e89">
@@ -5741,7 +5729,7 @@ Until the end of the Round, all terrain can be traveres by your infantry Units a
               <profiles>
                 <profile name="Recycle Tokens" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="33c0-e043-b500-b091">
                   <characteristics>
-                    <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">1/5= +1VP 2/5= +2VP 3/5= +2VP 4/5= +1VP 5/5= +1VP </characteristic>
+                    <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">1/5= +1VP 2/5= +2VP 3/5= +2VP 4/5= +1VP 5/5= +1VP</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Recycling Plant" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="41cb-c1a7-3886-3576">
