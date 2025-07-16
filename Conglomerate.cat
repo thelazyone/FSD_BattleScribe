@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="cfa7-7df0-41c9-f3fb" name="Conglomerate" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="4" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Tachi Tank" hidden="false" id="94d5-b788-a306-8afe" type="selectionEntry" targetId="0769-b436-9d8d-d1af"/>
+    <entryLink import="true" name="Superior Directive" hidden="false" id="3d22-a5e1-4938-5594" type="selectionEntry" targetId="982b-2408-84e2-553e"/>
+    <entryLink import="true" name="Scout Bikes" hidden="false" id="a02e-a04e-a9f2-3e49" type="selectionEntry" targetId="0dbb-adff-6974-86f6"/>
+    <entryLink import="true" name="Scimtar Artillery" hidden="false" id="da1c-9c09-fe0c-6cc1" type="selectionEntry" targetId="8836-75fc-8e26-dc8d"/>
+    <entryLink import="true" name="Sattellite Scan" hidden="false" id="0bee-3ea5-3bd4-1591" type="selectionEntry" targetId="390e-4eb1-41aa-200d"/>
+    <entryLink import="true" name="Saber Artillery" hidden="false" id="21fa-9cfd-0e66-d768" type="selectionEntry" targetId="46f6-09f0-90f8-0190"/>
+    <entryLink import="true" name="Rapier Gunship" hidden="false" id="db19-336f-39a5-5fa3" type="selectionEntry" targetId="0a86-2fca-35d2-e922"/>
+    <entryLink import="true" name="Parang Drop Pod" hidden="false" id="8912-df63-af51-20f4" type="selectionEntry" targetId="b25c-5276-a197-6616"/>
+    <entryLink import="true" name="Orbital Drop" hidden="false" id="2888-287b-0da8-5a1a" type="selectionEntry" targetId="59a7-e222-b686-7ef4"/>
+    <entryLink import="true" name="Odachi Tank" hidden="false" id="43cc-1bde-f569-f99c" type="selectionEntry" targetId="4337-4def-c47f-1964"/>
+    <entryLink import="true" name="Nagamaki Tank" hidden="false" id="e809-d376-f5be-9049" type="selectionEntry" targetId="d5bb-d7a7-2061-7b7f"/>
+    <entryLink import="true" name="Mandau Drop Pod" hidden="false" id="3c56-9f64-22d6-77bd" type="selectionEntry" targetId="4085-a36e-6191-f562"/>
+    <entryLink import="true" name="Malware Hack" hidden="false" id="9e0a-83cd-18ce-93a1" type="selectionEntry" targetId="9d64-3233-8807-dc9c"/>
+    <entryLink import="true" name="Local Lobbyist" hidden="false" id="6163-7912-cfff-1c56" type="selectionEntry" targetId="1363-5c41-f67b-0550"/>
+    <entryLink import="true" name="Lead Hunter" hidden="false" id="e0e7-4366-f94c-c346" type="selectionEntry" targetId="718d-1c51-6774-8497"/>
+    <entryLink import="true" name="Kukri Scout Vehicle" hidden="false" id="b1dc-c04e-c175-2a19" type="selectionEntry" targetId="198b-adcb-bf75-114f"/>
+    <entryLink import="true" name="Jian Walker" hidden="false" id="71a1-6520-219e-b8fd" type="selectionEntry" targetId="ce05-c989-5bc2-df37"/>
+    <entryLink import="true" name="Infantry at Squad" hidden="false" id="dda2-1c0c-2a04-c2b7" type="selectionEntry" targetId="fcd3-1ec1-8886-53b9"/>
+    <entryLink import="true" name="Estoc Air Transport" hidden="false" id="7e0b-05aa-07fd-a6ff" type="selectionEntry" targetId="5e2c-7b89-7cab-8c40"/>
+    <entryLink import="true" name="Dao Walker" hidden="false" id="5cb2-f087-825a-3fba" type="selectionEntry" targetId="68de-e813-d611-c287"/>
+    <entryLink import="true" name="Dagger Drop Pod" hidden="false" id="aef1-a340-e0c8-c186" type="selectionEntry" targetId="1282-a7d2-660c-bc5d"/>
+    <entryLink import="true" name="Corporate Infantry" hidden="false" id="340f-0eed-716e-ec24" type="selectionEntry" targetId="b0dc-45f2-8915-396f"/>
+    <entryLink import="true" name="Broadsword" hidden="false" id="895b-a1f8-d034-b6bc" type="selectionEntry" targetId="2d7c-900b-6969-d3eb"/>
+    <entryLink import="true" name="Claymore" hidden="false" id="16ab-526d-4c45-7ba4" type="selectionEntry" targetId="e452-4d0c-a61d-09fb"/>
+  </entryLinks>
+  <rules>
+    <rule name="Observe" id="be2d-d936-980b-260c" hidden="false">
+      <description>A Unit performing an Observe Action will mark
+all the enemy Units in Line of Sight within 6 DU
+as Observed. Only targets in Line of Sight at a
+given moment can be Observed, and the Observe
+status is lost if the observing Unit activates
+again or if it is Pinned.
+Targets that are Observed can either move out
+of range, hide behind LoS blocking covers, or
+Pin the opponent.</description>
+    </rule>
+    <rule name="Guided Shot" id="aad3-6660-e262-6b29" hidden="false">
+      <description>target of a Guided Shot that is currently Observed
+receives a penalty of -2 to their defense.</description>
+    </rule>
+    <rule name="Barrage" id="2776-4726-9973-d310" hidden="false">
+      <description>Weapons with the Barrage ability can target any
+opponent Unit that is currently Observed even if
+not in direct Line of Sight, as long as within the
+range limits of the weapon.</description>
+    </rule>
+    <rule name="Flying Behemoths" id="9ef1-32e8-63ef-6b65" hidden="false">
+      <description>All other systems are attached to the Hull, which
+means that a successful hit has to go through
+both before reaching the core.
+However, when shot from within 1 DU, all the
+hits target the core directly from any direction.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink name="Observer" id="f146-681a-bf7b-7eb2" hidden="false" type="rule" targetId="e1c5-2c39-d501-6d41"/>
+  </infoLinks>
+</catalogue>
