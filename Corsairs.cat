@@ -1,2 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6f23-183f-8cba-0cd1" name="Corsairs" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="6f23-183f-8cba-0cd1" name="Corsairs" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Albatross Drone" hidden="false" id="0305-71c8-d218-6581" type="selectionEntry" targetId="1911-9920-b635-57e1"/>
+    <entryLink import="true" name="Beluga Rig" hidden="false" id="9bab-0a6a-2183-200f" type="selectionEntry" targetId="9adb-f136-15c3-12d6"/>
+    <entryLink import="true" name="Orca Rig" hidden="false" id="b0f1-420d-35e1-980b" type="selectionEntry" targetId="5b12-2587-43f3-1699"/>
+    <entryLink import="true" name="Porpoise Rig" hidden="false" id="341d-790d-2acc-b136" type="selectionEntry" targetId="f53e-bb13-c3c0-6411"/>
+    <entryLink import="true" name="Drone Pilot" hidden="false" id="0ee8-a947-a4ec-1b21" type="selectionEntry" targetId="e206-9385-36fb-a8be"/>
+    <entryLink import="true" name="Flechette Cluster" hidden="false" id="92eb-1d9b-36c3-0029" type="selectionEntry" targetId="62c9-e36d-3b02-9092"/>
+    <entryLink import="true" name="Kinetic Dampener" hidden="false" id="85f3-8fb2-503f-4f26" type="selectionEntry" targetId="6378-6f4f-e473-e5e8"/>
+    <entryLink import="true" name="Legendary Pilot" hidden="false" id="1c4a-ca5d-a948-961f" type="selectionEntry" targetId="1786-c74b-a85d-c2d0"/>
+    <entryLink import="true" name="Narwhal Rig Cannon Loadout" hidden="false" id="9a89-d3af-200f-8a5b" type="selectionEntry" targetId="dd02-d320-1508-e099"/>
+    <entryLink import="true" name="Narwhal Rig Chaingun Loadout" hidden="false" id="f738-6510-d298-8efb" type="selectionEntry" targetId="15d2-16b3-b549-f136"/>
+    <entryLink import="true" name="Narwhal Rig Plasma Loadout" hidden="false" id="4086-450a-d0bf-e898" type="selectionEntry" targetId="facf-a9fa-9d73-efc7"/>
+    <entryLink import="true" name="Narwhal Rig Scout Loadout" hidden="false" id="f8c8-c413-7d01-249b" type="selectionEntry" targetId="04ba-f8bb-6c8d-4564"/>
+    <entryLink import="true" name="Orbital Pilot" hidden="false" id="c7f1-53d4-0756-440c" type="selectionEntry" targetId="fe61-2e94-f277-0ece"/>
+    <entryLink import="true" name="Pathfinding" hidden="false" id="b6ff-0a39-8837-d65f" type="selectionEntry" targetId="89be-3c5a-ca61-eca4"/>
+    <entryLink import="true" name="Recon Pilot" hidden="false" id="c976-e11c-c966-0bed" type="selectionEntry" targetId="d215-9654-0bbb-0faa"/>
+    <entryLink import="true" name="Seagull Drone" hidden="false" id="44b2-c6b2-2ecc-425c" type="selectionEntry" targetId="5d39-59ab-d919-b93b"/>
+    <entryLink import="true" name="Smoke Screen" hidden="false" id="f6ce-dbf5-9968-9873" type="selectionEntry" targetId="d9b3-624b-d5f0-7158"/>
+    <entryLink import="true" name="Sonic Disruptor" hidden="false" id="fc54-64ae-7031-f892" type="selectionEntry" targetId="7204-3c3b-1aac-a45c"/>
+    <entryLink import="true" name="Supply Link" hidden="false" id="8f4e-9fe4-e7d0-6569" type="selectionEntry" targetId="7c32-20c7-6048-6670"/>
+    <entryLink import="true" name="Veteran Pilot" hidden="false" id="11e7-7c27-fa97-0a1b" type="selectionEntry" targetId="f114-e613-7a7d-7a95"/>
+    <entryLink import="true" name="Walrus Rig Shredder Loadout" hidden="false" id="554d-4d7f-de60-a82a" type="selectionEntry" targetId="54c3-4f1b-ac55-8286"/>
+    <entryLink import="true" name="Walrus Rig Striker Loadout" hidden="false" id="b6bf-0778-aea3-3da5" type="selectionEntry" targetId="35e1-84a6-a542-f862"/>
+    <entryLink import="true" name="Walrus Rig Sweeper Loadout" hidden="false" id="4ffe-6f72-23ee-a80f" type="selectionEntry" targetId="b874-d3b3-9836-4e54"/>
+  </entryLinks>
+  <rules>
+    <rule name="Elite Rigs" id="f211-7b99-b9db-d0d8" hidden="false">
+      <description>All Rigs perform three actions per activation
+by default. This adds up with the Capable ability
+or any other effect.
+As a consequence of this rule, a Corsair Rig can
+perform two actions while Deploying, but it will
+still perform only one action while performing a
+Reaction.</description>
+    </rule>
+    <rule name="Weapon Attachments" id="f573-81d6-c952-b1d3" hidden="false">
+      <description>When the Unit activates, each attachment can
+be activated either before or after the Unit itself
+to perform two Actions. To do so, the Ready
+System Action must be prepared in the Unit’s
+card, and it is lost when the corresponding system
+is activated.
+When the Unit Reacts, each of the attachments
+can be activated too but performing one Action
+only, or two if the Unit has the Reactive ability.</description>
+    </rule>
+    <rule name="Drone Synergy" id="8005-0921-13bc-5a39" hidden="false">
+      <description>When commanding a Drone Unit from a Rig, you can choose to activate the
+Drone before the Rig.</description>
+    </rule>
+    <rule name="Ground Denial" id="462b-7415-6dbe-b0f8" hidden="false">
+      <description>If a Rig is controlling an objective and is within
+2DU from an Unpinned drone, only Vehicles or
+Mechs can contest it.</description>
+    </rule>
+  </rules>
+</catalogue>
