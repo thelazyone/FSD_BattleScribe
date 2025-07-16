@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="4" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="5" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
     <costType id="8d93-bbb8-ec4c-36d0" name="PTS" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
@@ -118,7 +118,7 @@
         <categoryLink id="4133-5bb0-0381-93a9" name="Mech" hidden="false" targetId="765c-1fc7-94aa-5156" primary="false"/>
         <categoryLink id="0414-41c9-cb87-8263" name="Vehicle" hidden="false" targetId="10bf-6ebe-629b-d107" primary="false"/>
         <categoryLink name="Behemoth" hidden="false" id="cd1b-dfd1-be4a-36c4" targetId="78e9-4e04-e960-e114"/>
-        <categoryLink name="Warden" hidden="false" id="66a2-d457-9ab2-b477" targetId="2219-6e2b-a7a1-e551" type="categoryEntry"/>
+        <categoryLink name="Warden" hidden="false" id="66a2-d457-9ab2-b477" targetId="2219-6e2b-a7a1-e551"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -2521,7 +2521,7 @@ Ignore all cover bonuses for opponent Units in an area with diameter 2DU. lasts 
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6+6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">4d8</characteristic>
             <characteristic name="Range" typeId="4846-2873-1859-3228">3DU to every Unit in LoS within in the frontal arc</characteristic>
-            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, IC, Requires 4 Wardens within 1DU </characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, IC, Requires 4 Wardens within 1DU</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2580,7 +2580,7 @@ Ignore all cover bonuses for opponent Units in an area with diameter 2DU. lasts 
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1+6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d8</characteristic>
             <characteristic name="Range" typeId="4846-2873-1859-3228">1-3DU</characteristic>
-            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2, Every Unit in LoS within 3DU in the frontal arc is considered as Pinned. Requires 4 Wardens within 1DU </characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2, Every Unit in LoS within 3DU in the frontal arc is considered as Pinned. Requires 4 Wardens within 1DU</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2804,7 +2804,7 @@ Repair one damage to one Mech Unit that has at least two Wardens within 1DU</cha
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1-2</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d10</characteristic>
             <characteristic name="Range" typeId="4846-2873-1859-3228">Contact</characteristic>
-            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Move 2DU, then do the attack, Requires 3 Wardens within 1DU. </characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Move 2DU, then do the attack, Requires 3 Wardens within 1DU.</characteristic>
           </characteristics>
         </profile>
         <profile name="S1 Tungsten Blade" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="2940-abda-64db-94d9">
@@ -2922,7 +2922,7 @@ Repair one damage to one Mech Unit that has at least two Wardens within 1DU</cha
         <profile name="Teamwork" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="5196-918a-421b-9db3">
           <characteristics>
             <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
-            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Gains the Engineer Ability. Lost when Pinned or Activated. </characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Gains the Engineer Ability. Lost when Pinned or Activated.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2943,7 +2943,7 @@ Repair one damage to one Mech Unit that has at least two Wardens within 1DU</cha
           <characteristics>
             <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
 Destroy one Mech you control: Units within 1DU from it
-receive a 2d8 AP2 attack. </characteristic>
+receive a 2d8 AP2 attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2958,7 +2958,7 @@ receive a 2d8 AP2 attack. </characteristic>
       <profiles>
         <profile name="Falling Debris" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="e22f-1a9e-1229-4537">
           <characteristics>
-            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">The attack can originate from any unpinned Cyclop in base contact with a Traversable, Broken or Fragile terrain element. </characteristic>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">The attack can originate from any unpinned Cyclop in base contact with a Traversable, Broken or Fragile terrain element.</characteristic>
           </characteristics>
         </profile>
         <profile name="Boulder" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="bd03-7a8d-4d83-aff7">
@@ -3132,8 +3132,7 @@ Whenever a Reclaimed Mech within 1DU performs an attack, the Ifrit perfomrs a 2d
             <characteristic name="Def" typeId="4f80-2983-67ac-bcb4">4+</characteristic>
             <characteristic name="Save" typeId="1152-b76b-31a4-3d81">d8(2)</characteristic>
             <characteristic name="Move" typeId="341c-df23-1cc5-9ede">2DU</characteristic>
-            <characteristic name="Ability" typeId="17ef-0829-c25d-9d7d">Whenever a Reclaimed Mech within 1DU receives a Hit, you can destroy the Ifrit to reroll the save.
-</characteristic>
+            <characteristic name="Ability" typeId="17ef-0829-c25d-9d7d">Whenever a Reclaimed Mech within 1DU receives a Hit, you can destroy the Ifrit to reroll the save.</characteristic>
           </characteristics>
           <attributes>
             <attribute typeId="f44d-c7c4-6fd8-9628" name="New Attribute Type"/>
@@ -3367,6 +3366,1260 @@ Laser beam to any target in their LoS. Each of the chosen Cyclops must be within
         <infoLink name="Warden Guide 1" id="4e10-dcef-57c4-72b4" hidden="false" type="rule" targetId="e857-bbfd-37ad-0ad3"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Corporate Infantry" hidden="false" id="b0dc-45f2-8915-396f">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6f3c-dd38-57dd-0596" id="ce35-8f01-2f4b-efe8" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Corporate Infantry" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="044e-ddde-2ad7-d8f3">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d6</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Rifle (per base)" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="f0fb-78ac-c9da-2bcf">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Observe" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="6664-ea59-9166-936e">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Lost if pinned or when activated</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Dagger Drop Pod" hidden="false" id="1282-a7d2-660c-bc5d">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
+      </costs>
+      <profiles>
+        <profile name="Dagger Drop Pod" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="5047-f6aa-776b-be43">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM(2)</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">ARM(2)</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM(3)</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM(3)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dagger Drop Pod" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="11b6-8229-1993-c4e1">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d10</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light Laser Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="5fd8-51ad-7480-57f3">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d10</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blunt" id="8e15-a5de-fded-d6cf" hidden="false" type="rule" targetId="5c0a-7a0b-2a61-2ca5"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="765c-1fc7-94aa-5156" id="e7da-557e-d4e4-0fd6" primary="true" name="Mech"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Dao Walker" hidden="false" id="68de-e813-d611-c287">
+      <categoryLinks>
+        <categoryLink targetId="765c-1fc7-94aa-5156" id="c8a6-6e3e-0746-caff" primary="true" name="Mech"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Dao Walker" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="39c9-c9e9-44ba-c0d4">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">MOV</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">MOV</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Laser Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="3738-ee2f-2885-c5b0">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d10</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1 Guided Shot</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dao Walker" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="41ca-8bf7-928b-1cf1">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(2)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Cluster Rockets x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="ac13-b54e-7c1a-cd39">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC, Area1, Barrage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="4"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Estoc Air Transport" hidden="false" id="5e2c-7b89-7cab-8c40">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="10bf-6ebe-629b-d107" id="306d-6a02-e749-4d86" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Estoc Air Transport" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="9dd5-ddb7-13bb-2efa">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">DEAD</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">MOV</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">MOV</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">MOV</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Estoc Air Transport" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="9c81-1374-cc4a-efca">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">5+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(2)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">4DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Light MG x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="fc15-d332-4da4-dad5">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S1 Load or Unload" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="c0de-fc61-4ff3-bb1e">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Carry two Infantry Units</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Flying" id="cf86-33a5-54dc-6d2a" hidden="false" type="rule" targetId="bad8-1413-ff22-73b6"/>
+        <infoLink name="Fast" id="c2e4-33bb-2e6c-1412" hidden="false" type="rule" targetId="0fc9-2e06-b007-d315"/>
+        <infoLink name="Nimble" id="9d20-09c7-8786-0050" hidden="false" type="rule" targetId="5551-1899-7ea1-290b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Infantry at Squad" hidden="false" id="fcd3-1ec1-8886-53b9">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6f3c-dd38-57dd-0596" id="66ca-d130-0a16-6ed3" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Infantry at Squad" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="6582-12fb-ff2e-910c">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d6</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Rifle (per base)" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="dcc5-19b1-0a46-5fec">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Rocket Launcher" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="55ce-03c3-6359-d1c2">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC, AP1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Jian Walker" hidden="false" id="ce05-c989-5bc2-df37">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="765c-1fc7-94aa-5156" id="771c-a45d-4bfa-e469" primary="true" name="Mech"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Jian Walker" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="4020-a3d1-2355-4654">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">MOV</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">MOV</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Jian Walker" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="cb91-ad30-8a36-d37c">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(2)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="2d40-39ef-f91c-53ab">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Cluster Rockets x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="e77e-b70b-952e-3f3a">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC, Area1, Barrage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Kukri Scout Vehicle" hidden="false" id="198b-adcb-bf75-114f">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="4"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="10bf-6ebe-629b-d107" id="4409-bf59-ce58-e69b" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Kukri Scout Vehicle" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="37ea-9765-5bc6-bebd">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S2</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S2</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kukri Scout Vehicle" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="06ca-fb8b-325b-d40c">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(2)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="4a26-b603-7366-d16a">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Light Laser Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="e6d2-f4d5-63ab-a999">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d10</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, Guided Shot</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Observe" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="700e-d44e-4c05-d590">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Lost if Pinned or when activated</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lead Hunter" hidden="false" id="718d-1c51-6774-8497">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="495f-d2b1-d32b-198f" id="77c0-c707-e438-59e8" primary="true" name="-Characters-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lead Hunter" typeId="e1c3-711e-3d42-e355" typeName="- Character -" hidden="false" id="3e5d-837d-95ac-12c4">
+          <characteristics>
+            <characteristic name="Cmd" typeId="8e8a-bb87-3c5d-29db">+2</characteristic>
+            <characteristic name="Ability" typeId="f241-af24-e9a1-39a5">The Unit the Lead Hunter is assigned to gains the Observer ability</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Local Lobbyist" hidden="false" id="1363-5c41-f67b-0550">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="495f-d2b1-d32b-198f" id="b15c-216e-0486-9e99" primary="true" name="-Characters-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Local Lobbyist" typeId="e1c3-711e-3d42-e355" typeName="- Character -" hidden="false" id="158d-97a4-b4da-55fb">
+          <characteristics>
+            <characteristic name="Cmd" typeId="8e8a-bb87-3c5d-29db">+1</characteristic>
+            <characteristic name="Ability" typeId="f241-af24-e9a1-39a5">You can include up to 10 Points of Units from other factions in your warband. These Units contribute to the Poits limit of the warband.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Malware Hack" hidden="false" id="9d64-3233-8807-dc9c">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="c6a1-a185-2032-55df" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Malware Hack" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="c24d-9ffe-89c5-f3fb">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
+Move one AD from the opponent&apos;s Unspent pile to their spent pile.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mandau Drop Pod" hidden="false" id="4085-a36e-6191-f562">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="765c-1fc7-94aa-5156" id="bca8-8ec8-66a2-13af" primary="true" name="Mech"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Mandau Drop Pod" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="0a9f-b655-2cbc-c321">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM(2)</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">ARM(2)</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM(3)</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM(3)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mandau Drop Pod" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="e6f4-5735-0a9a-8567">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d10</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="f441-fd6e-3f0f-2902">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blunt" id="be0f-abf4-bf6b-21e0" hidden="false" type="rule" targetId="5c0a-7a0b-2a61-2ca5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Nagamaki Tank" hidden="false" id="d5bb-d7a7-2061-7b7f">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="7"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="10bf-6ebe-629b-d107" id="dba8-190f-6914-abf2" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Nagamaki Tank" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="2c94-cc18-73c9-bd9a">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">MOV</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">MOV</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">ARM</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM(2)</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM(2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Nagamaki Tank" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="f343-cd92-ed3a-4419">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(3)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="5d62-b64e-b297-74e8">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Long Distance Laser Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="98e0-b4ef-9812-97a0">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d10</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3-6DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2, Guided shot</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Energy Shield" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="3880-36f2-03be-d5bc">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">+2 Def, Lost if Pinned or when activated.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Odachi Tank" hidden="false" id="4337-4def-c47f-1964">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="8"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="10bf-6ebe-629b-d107" id="20e9-32f7-00a1-8182" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Odachi Tank" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="4ec3-b267-6908-0a41">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">MOV</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S2</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S2</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM(2)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Odachi Tank" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="5111-569b-c883-66bf">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">2</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(3)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="c673-68a4-0fb8-4acb">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Heavy Laser Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="cbc6-7c5a-8e91-1ba8">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d10</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2-4DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2, Guided shot</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Odachi Tank" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="b246-30a2-6f54-3ba4">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">+2 Def, Lost if Pinned or when activated</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Orbital Drop" hidden="false" id="59a7-e222-b686-7ef4">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="e4a9-b5bb-62b8-4126" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Orbital Drop" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="f975-cd78-0374-8fe3">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Place a Drop Pod from your Reserve in play at more than 2DU from any enemy Unit. The Drop Pod does not count as Deployed and can be activated during this Round. You can only have one Orbital Drop card in your warband. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4f05-4832-6027-e399" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Parang Drop Pod" hidden="false" id="b25c-5276-a197-6616">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="765c-1fc7-94aa-5156" id="d256-1c11-5a3d-abd5" primary="true" name="Mech"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Parang Drop Pod" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="5860-1550-936a-863b">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM(2)</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">ARM(2)</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM(3)</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM(3)</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Parang Drop Pod" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="39ac-addb-ef20-74ca">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d10</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blunt" id="1994-a1f5-a61f-6f6d" hidden="false" type="rule" targetId="5c0a-7a0b-2a61-2ca5"/>
+        <infoLink name="Observer" id="7102-8844-77fb-f3e7" hidden="false" type="rule" targetId="e1c5-2c39-d501-6d41"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Rapier Gunship" hidden="false" id="0a86-2fca-35d2-e922">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="7"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="10bf-6ebe-629b-d107" id="4234-1fc3-95f2-6ec7" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Rapier Gunship" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="abb8-d575-f449-b5ce">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">DEAD</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">MOV</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">MOV</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">MOV</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rapier Gunship" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="9c90-3c57-31e6-cdc6">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">5+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(2)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">4DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Heavy Laser Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="9487-4094-8dc0-6398">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d10</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2-4DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2, Guided shot</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Light MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="d364-5b6c-5726-4baa">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Flying" id="5a1e-62d7-d43d-4428" hidden="false" type="rule" targetId="bad8-1413-ff22-73b6"/>
+        <infoLink name="Fast" id="a863-d34e-2c8d-d88e" hidden="false" type="rule" targetId="0fc9-2e06-b007-d315"/>
+        <infoLink name="Nimble" id="9d59-2947-7ac9-9561" hidden="false" type="rule" targetId="5551-1899-7ea1-290b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Saber Artillery" hidden="false" id="46f6-09f0-90f8-0190">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="10bf-6ebe-629b-d107" id="b49d-7ba7-4900-2f4f" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Saber Artillery" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="cfd7-3e99-ce68-5234">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">MOV</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">MOV</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Saber Artillery" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="9e48-c817-ae44-6079">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(2)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="bd15-19e7-d91c-41bd">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Howitzer" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="a67d-104a-b9eb-50e8">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6+4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3-6DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">Area1, AP1, Barrage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sattellite Scan" hidden="false" id="390e-4eb1-41aa-200d">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="9cf3-5e4a-4164-723d" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Sattellite Scan" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="af1e-81f1-8c6d-389c">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
+Choose a single opponent Unit: That Unit will be under the effect of Observe for the rest of the game. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Scimtar Artillery" hidden="false" id="8836-75fc-8e26-dc8d">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="8"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="10bf-6ebe-629b-d107" id="4d79-419c-0263-5d6c" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Scimtar Artillery" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="46f6-d85b-6d45-d690">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">MOV</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">MOV</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scimtar Artillery" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="c030-3737-eeda-22be">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(2)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="6e4f-722c-39ad-ecb4">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Cluster Rockets x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="07fa-a898-805a-af56">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC, Area1, Barrage</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Cluster Rockets x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="4825-0d78-d135-87cf">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC, Area1, Barrage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scout Bikes" hidden="false" id="0dbb-adff-6974-86f6">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6f3c-dd38-57dd-0596" id="d04b-6207-f894-218b" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Scout Bikes" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="1ea5-d774-b108-731a">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d6(2)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rifle (per base)" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="1d66-dab5-e5f8-a168">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="Observe" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="d822-74c4-8d57-49bf">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Lost if Pinned or when activated.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="171f-8fac-1acc-30b5" hidden="false" type="rule" targetId="0fc9-2e06-b007-d315"/>
+        <infoLink name="Mounted" id="4d2c-171e-47b7-f166" hidden="false" type="rule" targetId="d45c-ea5c-16d5-b08b"/>
+        <infoLink name="Nimble" id="3b4c-d2bb-9c37-cdeb" hidden="false" type="rule" targetId="5551-1899-7ea1-290b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Superior Directive" hidden="false" id="982b-2408-84e2-553e">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="1"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="48ff-9e4c-f19d-a343" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Superior Directive" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="0c6f-00ad-9035-2a8a">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
+Unpin all Pinned Units in a 1DU diameter area. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tachi Tank" hidden="false" id="0769-b436-9d8d-d1af">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="6"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="10bf-6ebe-629b-d107" id="f628-213f-c83d-05ab" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tachi Tank" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="5b9c-0764-7a0c-6df1">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">MOV</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S2</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S2</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tachi Tank" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="67b7-1d0e-d126-9e6f">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(3)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="0e2c-32f8-5df9-2162">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Laser Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="7fe9-19a8-beeb-735a">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d10</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2-4DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2, Guided shot</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Energy Shield" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="9ec6-cd19-8a2b-4ac3">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">+2 Def, Lost if Pinned or when activated</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Broadsword" hidden="false" id="2d7c-900b-6969-d3eb">
+      <categoryLinks>
+        <categoryLink targetId="78e9-4e04-e960-e114" id="ee15-3c70-d4ca-771c" primary="true" name="Behemoth"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="20"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Core" hidden="false" id="3fa7-1e90-ff33-5d10">
+          <profiles>
+            <profile name="Core" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="8639-c693-2d42-9d1f">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">MOV</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S1</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">S2</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">S2</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S3</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Core" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="369f-35dc-d7a5-64c0">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">4</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(3)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">4DU</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Heavy Laser Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="1430-573d-f84e-8dc6">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d10</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">2-4DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2, Guided shot, 180° front only</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S3 Super-Heavy Railgun" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="cd36-276b-982d-6b77">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d12</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">12DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP4, Hits all the Bases in a straight line, Requires S2, front only</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S2 Railgun Charge" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="793a-bf2a-04b9-d40c">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Required for S3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>System on 360°</comment>
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="9682-a570-e95b-90fe" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Large Target" id="b71a-f015-3b9f-f6da" hidden="false" type="rule" targetId="c747-3784-4477-0a24"/>
+            <infoLink name="Flying" id="d2be-8e04-1101-ec0c" hidden="false" type="rule" targetId="bad8-1413-ff22-73b6"/>
+            <infoLink name="Fast" id="48b3-d920-a33d-140d" hidden="false" type="rule" targetId="0fc9-2e06-b007-d315"/>
+            <infoLink name="Nimble" id="4a8a-705d-1ce7-e4a2" hidden="false" type="rule" targetId="5551-1899-7ea1-290b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b42a-460b-dc92-e89f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b42a-460b-dc92-e89f-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Broadsword Hull" hidden="false" id="52bb-a7d2-1832-2ad5">
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="39ef-f630-0d11-88ea" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Broadsword Hull" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="30e0-cb8f-f07c-9e0c">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(4)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Broadsword Hull" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="9f3c-ef37-760d-0da9">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">S2</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S3</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Cluster Rockets x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="1fef-d382-0094-6508">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6+6</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC, Area1, Barrage</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S2 Light Laser Cannon x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="e504-1b24-4caa-c051">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1-3</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d10</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">1-3 DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, Guided shot</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S3 Side Thruster" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="cfc8-6005-81aa-f8a2">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Perform a 2DU left or righjt lateral movement</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Downed" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="6e84-28d0-f853-5067">
+              <characteristics>
+                <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">If S3 and ARM are destroyed the Broadsword is Downed</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa2f-c8bb-2be9-beac-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa2f-c8bb-2be9-beac-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Downed Broadsword" hidden="false" id="2ef3-1031-b662-5060">
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="2104-4e17-84e3-403e" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Downed Broadsword" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="fb0e-81ac-967b-dd01">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Downed Broadsword" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="3754-9108-7c87-303a">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">4</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(3)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Emergency Protocol" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="3c5f-3d3d-b582-4c85">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">4-6</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Reroll up to 3 unspent ADs</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S2 Command Room" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="23d2-767f-be09-ea50">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">All Commanded Units can perform one extra action.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S3 Energy Shield" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="c616-68e3-5ad9-f888">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">3</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">All Units within 2DU gain +2 Def until next Round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Large Target" id="5974-baf0-03e9-d9c3" hidden="false" type="rule" targetId="c747-3784-4477-0a24"/>
+          </infoLinks>
+          <comment>System on 360°</comment>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3aff-8d5d-a061-b248-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3aff-8d5d-a061-b248-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Claymore" hidden="false" id="e452-4d0c-a61d-09fb">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="78e9-4e04-e960-e114" id="d996-c9df-f78a-01d8" primary="true" name="Behemoth"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Core" hidden="false" id="192f-8628-7386-ea29">
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="e4e2-1932-e01a-0874" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb8c-7a46-c6ef-de77-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb8c-7a46-c6ef-de77-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Core" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="3f32-21f3-5249-61a5">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">5</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(3)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">4DU</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Core" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="99da-5fd8-815c-b4d8">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM(2)</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Heavy Laser Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="c984-11a8-32d2-ec77">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d10</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">2-4DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2, Guided shot, 180° front arc </characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S2 Drop" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="a2fc-452e-c12c-685b">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Deploy a Drop Pod within 3DU from the Clymore</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S3 Drop" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="5d34-92d6-37dd-57ca">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Deploy a Drop Pod within 3DU from the Clymore</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <comment>Systems on 360°, 1 WPN</comment>
+          <infoLinks>
+            <infoLink name="Fast" id="a385-8e12-6036-f4ef" hidden="false" type="rule" targetId="0fc9-2e06-b007-d315"/>
+            <infoLink name="Flying" id="433e-8f90-b03e-182e" hidden="false" type="rule" targetId="bad8-1413-ff22-73b6"/>
+            <infoLink name="Nimble" id="7295-2573-e8ef-4ec0" hidden="false" type="rule" targetId="5551-1899-7ea1-290b"/>
+            <infoLink name="Large Target" id="a005-8939-e092-0027" hidden="false" type="rule" targetId="c747-3784-4477-0a24"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Claymore Hull" hidden="false" id="9974-8898-916c-dd0c">
+          <comment>System on left and right arc</comment>
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="36ce-b290-6ced-6ca5" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Claymore Hull" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="e94d-ebc1-7f88-77ce">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM(2)</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">ARM(2)</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S1</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Claymore Hull" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="5f0f-9b7f-02e1-c0be">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">2+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(4)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Cluster Rockets x4" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="d3fd-dd7b-96e1-0f2f">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6+6+6</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">IC, Area1, Barrage</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S2 Light Laser Cannon x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="2cb4-0853-53af-2d06">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1-3</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d10</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">1-3DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, 180° front only</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S3 Light Laser Cannon x2" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="fd4a-a96b-dd17-1b82">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">1-3</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d10</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">1-3DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, 180° rear only</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0d4-1837-9dd4-3d59-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0d4-1837-9dd4-3d59-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Claymore Side (left)" hidden="false" id="f42f-8211-99b5-8fd4">
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="5e8a-a935-46ea-69ee" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Claymore Side (left)" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="f036-bb0c-31dc-733d">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(4)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Claymore Side (left)" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="1348-8595-090d-7ee3">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Side Thruster" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="ce75-d639-4e71-1f27">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Perform a 2DU lateral left movement. -1 MOV if destroyed. </characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S2 Side Thruster" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="1d51-043c-7992-58cc">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Perform a 2DU lateral left movement. -1 MOV if destroyed. </characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Downed" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="be72-91bb-3760-31b0">
+              <characteristics>
+                <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">If both S1 and S2 are destroyed the Claymore is Downed. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="041a-89b3-345a-e86d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="041a-89b3-345a-e86d-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Claymore Side (right)" hidden="false" id="5ce8-a99c-8b3a-0e4b">
+          <categoryLinks>
+            <categoryLink name="Behemoth" hidden="false" id="e844-3142-bfaa-c72b" targetId="78e9-4e04-e960-e114" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Claymore Side (right)" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="83cf-016e-db02-716b">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(4)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Claymore Side (right)" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="ad86-d748-3d0c-e387">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Side Thruster" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="f62c-68a2-75bc-9e45">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Perform a 2DU lateral right movement. -1 MOV if destroyed. </characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S2 Side Thruster" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="12e0-1961-0d96-19a9">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Perform a 2DU lateral right movement. -1 MOV if destroyed. </characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Downed" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="525e-8bea-017e-1be0">
+              <characteristics>
+                <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">If both S1 and S2 are destroyed the Claymore is Downed. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb35-cc97-5e97-38e5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb35-cc97-5e97-38e5-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Downed Claymore" hidden="false" id="bee7-891c-184b-c4f0">
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="d947-dd4d-197d-3188" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Downed Claymore" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="6246-92b3-f5f6-0435">
+              <characteristics>
+                <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">5</characteristic>
+                <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+                <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(3)</characteristic>
+                <characteristic name="Move" typeId="5903-36df-8775-ef30">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Downed Claymore" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="dfe2-3aa3-28b5-6ff0">
+              <characteristics>
+                <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">ARM</characteristic>
+                <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+                <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM(2)</characteristic>
+                <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
+                <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+                <characteristic name="6" typeId="1d51-7333-32e7-9be4">S3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Emergency Protocol" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="f390-0352-c70e-621a">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">4-6</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Reroll up to 3 Ready ADs</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S2 Command Room" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="3819-8b27-8264-dbf0">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">All Units Commanded by the Clymore can perform one extra action.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S3 Energy Shield" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="1a77-58ed-bd89-5b55">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">3+3</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">All Units within 3DU gain +2 Def until next Round.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Large Target" id="c55c-a54a-3091-98f5" hidden="false" type="rule" targetId="c747-3784-4477-0a24"/>
+          </infoLinks>
+          <comment>System on 360°, 1 WPN</comment>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2f50-3dc4-f654-8516-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f50-3dc4-f654-8516-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Super-Heavy Railgun" hidden="false" id="0b31-6735-0f55-b40d">
+          <categoryLinks>
+            <categoryLink targetId="78e9-4e04-e960-e114" id="331a-954b-ea51-f9fa" primary="true" name="Behemoth"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="S2 Super-Heavy Railgun" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="528f-ff02-ecab-131e">
+              <characteristics>
+                <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+                <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d12</characteristic>
+                <characteristic name="Range" typeId="4846-2873-1859-3228">12DU</characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP4, Hits all the Bases in a straight line. Perform this attack for each loaded slot in S1, then empty all slots.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="S1 Railgun Charge" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="c967-0006-7f72-c735">
+              <characteristics>
+                <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">Free</characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Charge up to 3 times</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d1a4-e082-e31b-cc32-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1a4-e082-e31b-cc32-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="6ad0-98e4-bc85-bae1" name="Disciplined" hidden="false">
@@ -3515,6 +4768,20 @@ ability performs a Movement Action, it can
 move up to 1 Wardens within 1 DU from it,
 placing them anywhere within 1 DU from them
 at the end of the movement.</description>
+    </rule>
+    <rule name="Blunt" id="5c0a-7a0b-2a61-2ca5" hidden="false">
+      <description>The Unit cannot interact with objectives, neither
+to control nor to contest them, and is ignored in
+terms of Scenario objectives.
+Furthermore, the Unit cannot impede the movement
+of an opponent moving within 1 DU from
+it, nor prevent
+opponent Units from deploying.</description>
+    </rule>
+    <rule name="Observer" id="e1c5-2c39-d501-6d41" hidden="false">
+      <description>An Unpinned Unit with the Observer
+ability will always mark everything in Line of
+Sight and within 6 DU as Observed.</description>
     </rule>
   </sharedRules>
 </gameSystem>
