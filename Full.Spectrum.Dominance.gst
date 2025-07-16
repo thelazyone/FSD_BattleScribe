@@ -4620,6 +4620,298 @@ Unpin all Pinned Units in a 1DU diameter area. </characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Assault Siren" hidden="false" id="584c-f719-f5e7-817a">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="d441-a08c-af0b-ba05" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Assault Siren" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="6689-df17-2a0f-7ed6">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1+2</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">All of your Units immediately perform one attack action in base contact if they can.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="f5d6-dca5-98f7-3bcf-min" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f5d6-dca5-98f7-3bcf-max" includeChildSelections="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Commuter" hidden="false" id="1881-77ad-62f6-4191">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="10bf-6ebe-629b-d107" id="ca41-3873-74b4-7ae2" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Commuter" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="094a-666e-d3ba-d585">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">ARM</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">ARM(2)</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">PIN</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">PIN</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Commuter" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="13a9-985e-36c1-21af">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d10(2)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Heavy MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="751b-8f88-4df7-6c8b">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Load or Unload" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="d7f0-5fc8-f901-dd65">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Can carry up to 3 Infantry Units</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Large Target" id="6144-2252-a535-988e" hidden="false" type="rule" targetId="c747-3784-4477-0a24"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Crew Chief" hidden="false" id="3e20-c99b-d7c4-e5b5">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="495f-d2b1-d32b-198f" id="8815-135b-61c4-a1de" primary="true" name="-Characters-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Crew Chief" typeId="e1c3-711e-3d42-e355" typeName="- Character -" hidden="false" id="4a8b-e5f9-4825-0818">
+          <characteristics>
+            <characteristic name="Cmd" typeId="8e8a-bb87-3c5d-29db">+2</characteristic>
+            <characteristic name="Ability" typeId="f241-af24-e9a1-39a5">Assign this Character to an Infantry Unit. The Unit can perform one extra action per activation.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Demolition Man" hidden="false" id="b6f9-cbf6-b0a7-3d03">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="495f-d2b1-d32b-198f" id="901e-c551-a421-3b76" primary="true" name="-Characters-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Demolition Man" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="f2b2-5d25-33f5-4401">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Place a Mine token within 2DU from the Unit, and at least 2DU from any enemy Unit. If a non-Infantry enemy Unit moves within 1DU of the roken, roll a d6: on a result of 5+  the token is removed and the Unit receives a 1d8 AP2 attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Demolition Man" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="eb9b-9938-c748-f301">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">+2 Cmd</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Double Shift" hidden="false" id="fa3a-7310-7f7a-73d8">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="47db-22cd-fa5b-7bfb" id="d993-26e4-a31b-42c4" primary="true" name="-Support-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Double Shift" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="b545-4089-379a-24eb">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">Single Use.
+All of your Unpinned Infantry Units perform a full Move action immedately. This does not count as a first movement when taking further Move actions this Round.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dust Riders" hidden="false" id="f18b-8c54-408d-b532">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="6f3c-dd38-57dd-0596" id="3797-5cb6-0fde-e364" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Dust Riders" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="9705-4707-4096-7aa4">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">-</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">5+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d6</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rifle (per base)" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="ec33-37d9-fc96-3bf4">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="Hit and Run" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="8eee-0d55-884c-5a49">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Perform one Shoot (Rifle) action with a +2 to the target Defense, then one Move action. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fast" id="4d80-8121-ecff-1f05" hidden="false" type="rule" targetId="0fc9-2e06-b007-d315"/>
+        <infoLink name="Mounted" id="6f4c-6ffc-3949-8212" hidden="false" type="rule" targetId="d45c-ea5c-16d5-b08b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Foreman" hidden="false" id="e6c2-7747-08e8-477c">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="495f-d2b1-d32b-198f" id="a8cb-9fc9-0446-dc31" primary="true" name="-Characters-"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Foreman" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="7c76-c01b-7c58-b1e7">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">+2 Cmd</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Foreman" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="94e8-bb7a-e9a6-c383">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">All Commanded Infantry Units roll dice of a higher category when attacking in base contact this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Guntruck" hidden="false" id="d6ef-63b5-03e1-be77">
+      <categoryLinks>
+        <categoryLink targetId="10bf-6ebe-629b-d107" id="65cb-5f05-addf-db56" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="7"/>
+      </costs>
+      <profiles>
+        <profile name="Guntruck" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="5751-76b2-f8c8-ad31">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S2+S3</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">S2+S3</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">S2+S3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Guntruck" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="f31e-8306-8622-689f">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(2)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Heavy MG" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="50cc-17e2-e323-3a91">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Artillery Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="82b2-bd5d-2402-d71e">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d12</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3-6DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Artillery Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="db1d-e631-a949-3905">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6+6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d12</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3-6DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Large Target" id="ac86-db4d-cd01-8a17" hidden="false" type="rule" targetId="c747-3784-4477-0a24"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gunwagon" hidden="false" id="c0c3-dfa4-a6f3-e238">
+      <categoryLinks>
+        <categoryLink targetId="10bf-6ebe-629b-d107" id="48f0-8d73-d479-24cf" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Gundwagon" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="5ad9-7464-1561-1ebe">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">DEAD</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">MOV</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">MOV</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">S2</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">S1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gundwagon" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="3888-38e4-dd2a-7741">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">4+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(3)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">3DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Light MG Gunner" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="fc66-2d7d-0adf-e50d">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">2DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154"/>
+          </characteristics>
+        </profile>
+        <profile name="S2 Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="52cb-34ef-c6bb-c8a6">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">2d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">1-3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Load or Unload" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="7a1f-4bd5-df9b-4cf8">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-3</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Can carry one Infantry Unit</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fast" hidden="false" id="9079-a4cf-63d0-d8d8">
+          <infoLinks>
+            <infoLink name="Fast" id="ecfd-0e52-e67a-b9f7" hidden="false" type="rule" targetId="0fc9-2e06-b007-d315"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tracked" hidden="false" id="d353-be42-7d11-ae81">
+          <infoLinks>
+            <infoLink name="Tracked" id="e707-98dc-b6be-4e00" hidden="false" type="rule" targetId="f04f-5036-da1a-1615"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="4"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="6ad0-98e4-bc85-bae1" name="Disciplined" hidden="false">
@@ -4782,6 +5074,10 @@ opponent Units from deploying.</description>
       <description>An Unpinned Unit with the Observer
 ability will always mark everything in Line of
 Sight and within 6 DU as Observed.</description>
+    </rule>
+    <rule name="Tracked" id="f04f-5036-da1a-1615" hidden="false">
+      <description>The Unit can ignore the effects of Broken and
+Fragile terrain.</description>
     </rule>
   </sharedRules>
 </gameSystem>

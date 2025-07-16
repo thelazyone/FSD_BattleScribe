@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="4ac8-33c2-56b9-7f88" name="Union" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="5" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Gunwagon" hidden="false" id="a821-3b55-4f7e-943b" type="selectionEntry" targetId="c0c3-dfa4-a6f3-e238"/>
+  </entryLinks>
+  <rules>
+    <rule name="Union Representative" id="6609-9842-d249-be07" hidden="false">
+      <description>Every Union warband of 40 Points or more
+needs to include a Union Representative in it.
+Unlike other Characters, the player can decide
+either to use this card as a Character or as a
+Support Card.
+If used as a Character, the Union Representative
+will be assigned to a Unit, providing additional
+benefits while in play. Being a character, it can,
+however, be killed along with that Unit.
+If used as a Support Card, the Union Representative
+will provide fewer benefits but remain
+available to use throughout the game.</description>
+    </rule>
+    <rule name="Open Transports" id="2a5d-2049-d9f4-e476" hidden="false">
+      <description>In case of a transport being destroyed, all the
+transported Units will roll a 1d6 attack per base,
+rather than rolling a die of the same category of
+damage that destroyed the transporting Unit.</description>
+    </rule>
+  </rules>
+</catalogue>
