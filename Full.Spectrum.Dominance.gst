@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="7" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="8" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
     <costType id="8d93-bbb8-ec4c-36d0" name="PTS" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
@@ -3299,7 +3299,7 @@ Laser beam to any target in their LoS. Each of the chosen Cyclops must be within
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Troll Worker" hidden="false" id="484b-e7d6-7fdd-21c9">
       <costs>
-        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="4"/>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Mech" hidden="false" id="3cdd-21b8-6c2c-8a52" targetId="765c-1fc7-94aa-5156" primary="true"/>
@@ -6193,7 +6193,7 @@ Select an unpinned Rig you control. Until the next Round, any non-Contact attack
             <profile name="S1 Ready All Systems" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="eea5-40ba-27c8-665a">
               <characteristics>
                 <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
-                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Lost to activate any number of WPN during the Orca activation. Weapons can only shoot in the front arc. </characteristic>
+                <characteristic name="Special" typeId="59db-73ef-ac41-6037">Lost to activate any number of WPN during the Orca activation. Weapons can only shoot in the front arc.</characteristic>
               </characteristics>
             </profile>
             <profile name="S2 Captains&apos;s Orders" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="6c74-9c52-7504-aed2">
@@ -6778,7 +6778,7 @@ then discard the lowest among the results.</description>
                 <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
                 <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d8 OR 2d8</characteristic>
                 <characteristic name="Range" typeId="4846-2873-1859-3228">1-3DU OR 1-3DU</characteristic>
-                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1 OR AP1, on three different targets. </characteristic>
+                <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1 OR AP1, on three different targets.</characteristic>
               </characteristics>
             </profile>
           </profiles>
