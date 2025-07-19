@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="4ac8-33c2-56b9-7f88" name="Union" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="5" revision="2" battleScribeVersion="2.03" hidden="false" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink import="true" name="Gunwagon" hidden="false" id="a821-3b55-4f7e-943b" type="selectionEntry" targetId="c0c3-dfa4-a6f3-e238"/>
+    <entryLink import="true" name="Guntruck" hidden="false" id="48b5-0847-df52-9b7c" type="selectionEntry" targetId="d6ef-63b5-03e1-be77"/>
+    <entryLink import="true" name="Foreman" hidden="false" id="2894-d7ae-b932-f125" type="selectionEntry" targetId="e6c2-7747-08e8-477c"/>
+    <entryLink import="true" name="Dust Riders" hidden="false" id="8164-d350-2a14-a0c6" type="selectionEntry" targetId="f18b-8c54-408d-b532"/>
+    <entryLink import="true" name="Double Shift" hidden="false" id="c658-cbbd-540d-5b6b" type="selectionEntry" targetId="fa3a-7310-7f7a-73d8"/>
+    <entryLink import="true" name="Demolition Man" hidden="false" id="ccf2-dff0-b658-57ea" type="selectionEntry" targetId="b6f9-cbf6-b0a7-3d03"/>
+    <entryLink import="true" name="Crew Chief" hidden="false" id="3786-5160-99e8-6c46" type="selectionEntry" targetId="3e20-c99b-d7c4-e5b5"/>
+    <entryLink import="true" name="Commuter" hidden="false" id="1db9-1eda-9404-8087" type="selectionEntry" targetId="1881-77ad-62f6-4191"/>
+    <entryLink import="true" name="Assault Siren" hidden="false" id="624a-1a7f-c432-935d" type="selectionEntry" targetId="584c-f719-f5e7-817a"/>
+    <entryLink import="true" name="Ramwagon" hidden="false" id="5bb4-1759-ed25-00d2" type="selectionEntry" targetId="2313-f076-2837-0f5f"/>
+    <entryLink import="true" name="Improvised  Barrier" hidden="false" id="33b6-b1ac-7bbe-b55b" type="selectionEntry" targetId="28f6-ce10-6671-f477"/>
+    <entryLink import="true" name="Maulers" hidden="false" id="4368-e805-1e0b-90d6" type="selectionEntry" targetId="611a-8846-bbf3-6a1c"/>
+    <entryLink import="true" name="Mechanic" hidden="false" id="bd93-8129-034e-aa54" type="selectionEntry" targetId="bce5-db8f-ee1a-20cd"/>
+    <entryLink import="true" name="Mobile Fortress" hidden="false" id="6cf0-2b10-1c20-1c50" type="selectionEntry" targetId="77f8-16ac-bd96-402b"/>
+    <entryLink import="true" name="Reclaimers" hidden="false" id="35c2-9232-defc-e012" type="selectionEntry" targetId="5b77-eb78-e139-8a04"/>
+    <entryLink import="true" name="Repairing Team" hidden="false" id="f15f-500e-7476-b716" type="selectionEntry" targetId="e9fd-8714-b598-df8a"/>
+    <entryLink import="true" name="Steeljacks" hidden="false" id="0266-8666-eaa6-deec" type="selectionEntry" targetId="623c-6856-cb77-4e97"/>
+    <entryLink import="true" name="Tugger" hidden="false" id="70de-3587-d24e-b2e8" type="selectionEntry" targetId="408c-c7fa-1bf1-83ce"/>
+    <entryLink import="true" name="Tunnels and Hooks" hidden="false" id="055f-7073-b494-2056" type="selectionEntry" targetId="6b20-1a37-fb13-5f21"/>
+    <entryLink import="true" name="Union Representative" hidden="false" id="6227-8aa3-ec5c-8a34" type="selectionEntry" targetId="b198-c754-982d-3c68"/>
+    <entryLink import="true" name="Minenibbler" hidden="false" id="8243-c7ce-572a-27e7" type="selectionEntry" targetId="93f5-3c06-1c85-4b6f"/>
+    <entryLink import="true" name="Minecrawler" hidden="false" id="672d-f7fa-1da2-e8a3" type="selectionEntry" targetId="f3de-dad7-aac7-eba4"/>
+  </entryLinks>
+  <rules>
+    <rule name="Union Representative" id="6609-9842-d249-be07" hidden="false">
+      <description>Every Union warband of 40 Points or more
+needs to include a Union Representative in it.
+Unlike other Characters, the player can decide
+either to use this card as a Character or as a
+Support Card.
+If used as a Character, the Union Representative
+will be assigned to a Unit, providing additional
+benefits while in play. Being a character, it can,
+however, be killed along with that Unit.
+If used as a Support Card, the Union Representative
+will provide fewer benefits but remain
+available to use throughout the game.</description>
+    </rule>
+    <rule name="Open Transports" id="2a5d-2049-d9f4-e476" hidden="false">
+      <description>In case of a transport being destroyed, all the
+transported Units will roll a 1d6 attack per base,
+rather than rolling a die of the same category of
+damage that destroyed the transporting Unit.</description>
+    </rule>
+  </rules>
+</catalogue>
