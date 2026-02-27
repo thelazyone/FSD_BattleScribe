@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="8" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="10" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
     <costType id="8d93-bbb8-ec4c-36d0" name="PTS" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
@@ -3323,7 +3323,7 @@ Laser beam to any target in their LoS. Each of the chosen Cyclops must be within
             <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
           </characteristics>
         </profile>
-        <profile name="S1 Light Hand Gun" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="cbce-97cf-2b79-7b80">
+        <profile name="S1 Smash" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="cbce-97cf-2b79-7b80">
           <characteristics>
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d6</characteristic>
@@ -6642,6 +6642,120 @@ Select any Prepared Action from an unpinned Rig you control that does not requir
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cyclop Shepherd" hidden="false" id="0539-ac4b-f337-c3ff">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="7"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mech" hidden="false" id="ec55-1d64-725b-1bff" targetId="765c-1fc7-94aa-5156" primary="true"/>
+        <categoryLink targetId="5d46-73d1-a36a-db97" id="ebe9-c1b0-7f5c-67ac" primary="false" name="Cyclops"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cyclop Shepherd" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="7562-6a83-a5b6-e65f">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S1</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S2</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cyclop Shepherd" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="8a25-dacd-fa9c-ad08">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">1</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(4)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Wrench" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="1c06-f202-5571-1ec4">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">5-6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">4d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">Contact</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Muster Wardens" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="8d43-0639-5c35-731c">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Place up to two bases of destroyed Wardens in contact with the Shepherd</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Herding Call" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="f25c-3a8f-8731-aa74">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1-2</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Move all Wardens by up to 2 DU</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwavering" id="4858-b8bd-a9ca-1db9" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+        <infoLink name="Warden Guide 4" id="36ba-a7d9-9977-780c" hidden="false" type="rule" targetId="6170-c872-49f8-6c07"/>
+        <infoLink name="Unique" id="cfd9-d7b2-9b6c-7aa7" hidden="false" type="rule" targetId="7ebc-5821-568b-629e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cyclop Vanguard" hidden="false" id="99a1-33dd-166e-d560">
+      <costs>
+        <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="9"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Mech" hidden="false" id="786d-4757-c342-4551" targetId="765c-1fc7-94aa-5156" primary="true"/>
+        <categoryLink name="Cyclops" hidden="false" id="e900-8445-e871-e2ab" targetId="5d46-73d1-a36a-db97" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cyclop Vanguard" typeId="89a7-f4b2-ae67-e4de" typeName="--- DC ---" hidden="false" id="b20e-98ba-a439-d39a">
+          <characteristics>
+            <characteristic name="1" typeId="d4bc-17ea-eea8-eb42">DEAD</characteristic>
+            <characteristic name="2" typeId="6a72-57fd-b1f6-2672">S2</characteristic>
+            <characteristic name="3" typeId="8c81-e505-261d-8c29">S1</characteristic>
+            <characteristic name="4" typeId="5137-88be-d46c-1325">S1</characteristic>
+            <characteristic name="5" typeId="554d-170c-4471-ede5">ARM</characteristic>
+            <characteristic name="6" typeId="1d51-7333-32e7-9be4">ARM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cyclop Vanguard" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -" hidden="false" id="03de-3b7a-e77b-d6dd">
+          <characteristics>
+            <characteristic name="Cmd" typeId="f031-08f3-1f22-422b">3</characteristic>
+            <characteristic name="Def" typeId="4eca-9bad-8c57-3071">3+</characteristic>
+            <characteristic name="Save" typeId="44f9-475a-0170-0083">d8(4)</characteristic>
+            <characteristic name="Move" typeId="5903-36df-8775-ef30">2DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S1 Tactical Cannon" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="f0f9-9e5b-27d2-3d5f">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">Free</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S3 Rush" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="ca39-54e3-d6e8-6567">
+          <characteristics>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
+            <characteristic name="Special" typeId="59db-73ef-ac41-6037">Move up to 4DU. The destination must be within 1DU from a Warden</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="S2 Second Shot" typeId="4cde-0ccb-0021-83c5" typeName="-- Weapon --" hidden="false" id="3049-b34c-338a-fe33">
+          <characteristics>
+            <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">6</characteristic>
+            <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">3d8</characteristic>
+            <characteristic name="Range" typeId="4846-2873-1859-3228">3DU</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, Requires 2 Wardens within 1DU</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Cyclop Vanguard" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="8d3e-9904-6e8f-a6f0">
+          <characteristics>
+            <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">If the Cyclops Vanguard commands two or more Units, it gains the Capable ability for this Round</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Unwavering" id="e2b9-eb98-19a1-5d9c" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
+        <infoLink name="Unique" id="4c91-13d5-7d40-8b48" hidden="false" type="rule" targetId="7ebc-5821-568b-629e"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="6ad0-98e4-bc85-bae1" name="Disciplined" hidden="false">
@@ -6831,6 +6945,11 @@ then discard the lowest among the results.</description>
                 <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d6</characteristic>
                 <characteristic name="Range" typeId="4846-2873-1859-3228">1-3DU</characteristic>
                 <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP1, IC</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Lantern Laser" typeId="5302-6018-a30d-8193" typeName="- Support -" hidden="false" id="6bac-3165-659a-6b90">
+              <characteristics>
+                <characteristic name="Ability" typeId="0598-7742-8ac3-bc60">The Lantern Laser hits on a 2+ regardless of the taret defense.</characteristic>
               </characteristics>
             </profile>
           </profiles>

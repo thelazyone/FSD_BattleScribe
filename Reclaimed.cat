@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c29a-ac23-b5d6-6b06" name="Reclaimed" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c29a-ac23-b5d6-6b06" name="Reclaimed" gameSystemId="952b-71f3-4745-03fc" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <rules>
     <rule name="Objective Assist" id="5497-7fbc-70e8-66ab" hidden="false">
       <description>Any Unpinned Reclaimed Mech Unit that has at
@@ -38,5 +38,7 @@ count as their own Warden for these purposes.</description>
     <entryLink import="true" name="Troll Sentinel" hidden="false" id="5748-049f-5bee-cafd" type="selectionEntry" targetId="4b91-c06c-7b3d-0d83"/>
     <entryLink import="true" name="Troll Sniper" hidden="false" id="4961-7530-165e-39c6" type="selectionEntry" targetId="c72b-f1f7-337d-8793"/>
     <entryLink import="true" name="Troll Worker" hidden="false" id="0f30-140d-a2ed-2170" type="selectionEntry" targetId="484b-e7d6-7fdd-21c9"/>
+    <entryLink import="true" name="Cyclop Vanguard" hidden="false" id="22b9-eaa5-682c-8486" type="selectionEntry" targetId="99a1-33dd-166e-d560"/>
+    <entryLink import="true" name="Cyclop Shepherd" hidden="false" id="7daa-33d4-5e7b-203f" type="selectionEntry" targetId="0539-ac4b-f337-c3ff"/>
   </entryLinks>
 </catalogue>
