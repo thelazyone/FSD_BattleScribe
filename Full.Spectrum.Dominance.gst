@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="10" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="11" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
     <costType id="8d93-bbb8-ec4c-36d0" name="PTS" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
@@ -123,7 +123,7 @@
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="db2a-1e8a-3d3c-b02b" name="Armored Infantry (2 Bases)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="db2a-1e8a-3d3c-b02b" name="Armored Infantry (2 Bases)" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="b695-c211-189a-caa8" name="Armored Infantry" hidden="false" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -">
           <characteristics>
@@ -159,13 +159,13 @@
         </profile>
       </profiles>
       <categoryLinks>
-        <categoryLink id="d6d6-f94d-e03d-6c3b" name="Infantry" hidden="false" targetId="6f3c-dd38-57dd-0596" primary="true"/>
+        <categoryLink targetId="6f3c-dd38-57dd-0596" id="be51-73bb-d665-4284" primary="true" name="Infantry"/>
       </categoryLinks>
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="4"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="75b3-8552-0cf9-a76e" name="Battle Robots (3 Bases)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="75b3-8552-0cf9-a76e" name="Battle Robots (3 Bases)" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="be4c-1453-6b38-57e5" name="Battle Robots" hidden="false" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -">
           <characteristics>
@@ -283,6 +283,9 @@ Unpin a pinned unit under your control that has not yet activated this Round.</c
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="05bf-d29a-eb97-3e9f" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="b8f7-5e87-49b2-1f67" name="General" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -478,7 +481,7 @@ The target Unit must be a Vehicle or Mech Unit.</characteristic>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="8"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9b69-b917-eede-c519" name="Heavy Robots (2 Bases)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9b69-b917-eede-c519" name="Heavy Robots (2 Bases)" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="2251-2d8e-8971-3cbc" name="Heavy Robots" hidden="false" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -">
           <characteristics>
@@ -515,7 +518,7 @@ The target Unit must be a Vehicle or Mech Unit.</characteristic>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="4"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3bf0-3ba7-0900-88f0" name="Heavy Spider Drones (2 Bases)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3bf0-3ba7-0900-88f0" name="Heavy Spider Drones (2 Bases)" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="60f5-d776-637e-4967" name="Heavy Spider Drones" hidden="false" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -">
           <characteristics>
@@ -561,7 +564,7 @@ The target Unit must be a Vehicle or Mech Unit.</characteristic>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="4"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4de6-6f88-657c-7d6f" name="Infantrymen (3 Bases)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="4de6-6f88-657c-7d6f" name="Infantrymen (3 Bases)" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="5a8e-84a4-7ef0-0d06" name="Infantrymen" hidden="false" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -">
           <characteristics>
@@ -655,7 +658,7 @@ Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.</characteristic>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c881-5bbe-6e4a-c764" name="Light Mortar (2 Bases)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c881-5bbe-6e4a-c764" name="Light Mortar (2 Bases)" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="9426-e354-03bb-710b" name="Light Mortar" hidden="false" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -">
           <characteristics>
@@ -822,6 +825,9 @@ Reroll up to 4 dice from the opponent&apos;s Ready ADs pile.</characteristic>
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1fdd-c667-aa85-8c4b" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="f9d1-703b-6334-079a" name="Rocket Launcher" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -881,7 +887,7 @@ Roll up to three Activation Dice from the spent pile.</characteristic>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b849-6e4e-7f1e-9fd9" name="Scouts (2 Bases)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b849-6e4e-7f1e-9fd9" name="Scouts (2 Bases)" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="619d-5068-7e60-6871" name="Scouts" hidden="false" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -">
           <characteristics>
@@ -980,6 +986,9 @@ The unit gain the Reactive trait.</characteristic>
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d8e5-2450-f345-f155" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="7119-2ba1-68b0-06a5" name="Socrates Battle Rig (Sharpshooter)" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -1171,7 +1180,7 @@ Switch two Characters from two Units you control, or move one Character from a U
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="1"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="75d8-62ad-37bf-e0bc" name="Light Spider Drones (2 Bases)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="75d8-62ad-37bf-e0bc" name="Light Spider Drones (2 Bases)" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="6a1b-9859-a445-bef6" name="Light Spider Drones" hidden="false" typeId="4542-ecd7-1c59-7c80" typeName="- Unit -">
           <characteristics>
@@ -3343,7 +3352,7 @@ Laser beam to any target in their LoS. Each of the chosen Cyclops must be within
         <infoLink name="Warden Guide 1" id="4e10-dcef-57c4-72b4" hidden="false" type="rule" targetId="e857-bbfd-37ad-0ad3"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Corporate Infantry" hidden="false" id="b0dc-45f2-8915-396f">
+    <selectionEntry type="model" import="true" name="Corporate Infantry" hidden="false" id="b0dc-45f2-8915-396f">
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
       </costs>
@@ -3505,7 +3514,7 @@ Laser beam to any target in their LoS. Each of the chosen Cyclops must be within
         <infoLink name="Nimble" id="9d20-09c7-8786-0050" hidden="false" type="rule" targetId="5551-1899-7ea1-290b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Infantry at Squad" hidden="false" id="fcd3-1ec1-8886-53b9">
+    <selectionEntry type="model" import="true" name="Infantry at Squad" hidden="false" id="fcd3-1ec1-8886-53b9">
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
       </costs>
@@ -4031,7 +4040,7 @@ Choose a single opponent Unit: That Unit will be under the effect of Observe for
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Scout Bikes" hidden="false" id="0dbb-adff-6974-86f6">
+    <selectionEntry type="model" import="true" name="Scout Bikes" hidden="false" id="0dbb-adff-6974-86f6">
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
       </costs>
@@ -4714,7 +4723,7 @@ All of your Unpinned Infantry Units perform a full Move action immedately. This 
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Dust Riders" hidden="false" id="f18b-8c54-408d-b532">
+    <selectionEntry type="model" import="true" name="Dust Riders" hidden="false" id="f18b-8c54-408d-b532">
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
       </costs>
@@ -4912,7 +4921,7 @@ Place a 2DU long barrier anywhere on the table further than 2DU from any Unpinne
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Maulers" hidden="false" id="611a-8846-bbf3-6a1c">
+    <selectionEntry type="model" import="true" name="Maulers" hidden="false" id="611a-8846-bbf3-6a1c">
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="3"/>
       </costs>
@@ -5122,7 +5131,7 @@ Place a 2DU long barrier anywhere on the table further than 2DU from any Unpinne
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Reclaimers" hidden="false" id="5b77-eb78-e139-8a04">
+    <selectionEntry type="model" import="true" name="Reclaimers" hidden="false" id="5b77-eb78-e139-8a04">
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
       </costs>
@@ -5175,7 +5184,7 @@ Place a 2DU long barrier anywhere on the table further than 2DU from any Unpinne
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Steeljacks" hidden="false" id="623c-6856-cb77-4e97">
+    <selectionEntry type="model" import="true" name="Steeljacks" hidden="false" id="623c-6856-cb77-4e97">
       <costs>
         <cost name="PTS" typeId="8d93-bbb8-ec4c-36d0" value="2"/>
       </costs>
@@ -6695,6 +6704,9 @@ Select any Prepared Action from an unpinned Rig you control that does not requir
         <infoLink name="Warden Guide 4" id="36ba-a7d9-9977-780c" hidden="false" type="rule" targetId="6170-c872-49f8-6c07"/>
         <infoLink name="Unique" id="cfd9-d7b2-9b6c-7aa7" hidden="false" type="rule" targetId="7ebc-5821-568b-629e"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="002c-4bd2-3dbd-7c8c" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Cyclop Vanguard" hidden="false" id="99a1-33dd-166e-d560">
       <costs>
@@ -6755,6 +6767,9 @@ Select any Prepared Action from an unpinned Rig you control that does not requir
         <infoLink name="Unwavering" id="e2b9-eb98-19a1-5d9c" hidden="false" type="rule" targetId="8186-1ebd-90e4-581d"/>
         <infoLink name="Unique" id="4c91-13d5-7d40-8b48" hidden="false" type="rule" targetId="7ebc-5821-568b-629e"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="763c-c4e4-4725-fed1" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
