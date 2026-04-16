@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="11" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="952b-71f3-4745-03fc" name="Full Spectrum Dominance" revision="12" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <costTypes>
     <costType id="8d93-bbb8-ec4c-36d0" name="PTS" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
@@ -3286,7 +3286,7 @@ Laser beam to any target in their LoS. Each of the chosen Cyclops must be within
             <characteristic name="AD" typeId="cd5c-3373-9a29-0c90">4-6</characteristic>
             <characteristic name="Dmg" typeId="0ea4-8079-8250-a303">1d12</characteristic>
             <characteristic name="Range" typeId="4846-2873-1859-3228">2-5DU</characteristic>
-            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, Lethal, Target must be from S1.</characteristic>
+            <characteristic name="Special" typeId="c3e9-48c7-1f45-e154">AP3, Surgical, Lethal, Target must be from S1.</characteristic>
           </characteristics>
         </profile>
         <profile name="S3 Cloaking" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="a1a3-3f09-7962-d6e0">
@@ -6688,7 +6688,7 @@ Select any Prepared Action from an unpinned Rig you control that does not requir
         </profile>
         <profile name="S2 Muster Wardens" typeId="ffe1-1e65-eba6-420d" typeName="-- Ability --" hidden="false" id="8d43-0639-5c35-731c">
           <characteristics>
-            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1</characteristic>
+            <characteristic name="AD" typeId="77e8-01ff-ac12-48a5">1+2</characteristic>
             <characteristic name="Special" typeId="59db-73ef-ac41-6037">Place up to two bases of destroyed Wardens in contact with the Shepherd</characteristic>
           </characteristics>
         </profile>
@@ -6837,32 +6837,17 @@ The first action is performed at the same time of the acting Unit, and the other
 warband.</description>
     </rule>
     <rule name="Unwavering" id="8186-1ebd-90e4-581d" hidden="false">
-      <description>The Unit can perform Actions while Pinned rinstead
-of being forced to Unpin as its first Action.
-Any other penalty, such as the inability to Command,
-React or interact with objectives, still
-applies.</description>
+      <description>The Unit can perform Actions while Pinned instead of being forced to Unpin as its first Action.
+Any other penalty, such as the inability to Command, React or interact with objectives, still applies.</description>
     </rule>
     <rule name="Warden Guide 4" id="6170-c872-49f8-6c07" hidden="false">
-      <description>When a Reclaimed Unit with the Warden Guide
-ability performs a Movement Action, it can
-move up to 4 Wardens within 1 DU from it,
-placing them anywhere within 1 DU from them
-at the end of the movement.</description>
+      <description>When a Reclaimed Unit with the Warden Guide ability performs a Movement Action, it can move up to 4 Wardens within 1 DU from it, placing them anywhere within 1 DU from them at the end of the movement.</description>
     </rule>
     <rule name="Warden Guide 2" id="b00f-c002-0647-189d" hidden="false">
-      <description>When a Reclaimed Unit with the Warden Guide
-ability performs a Movement Action, it can
-move up to 2 Wardens within 1 DU from it,
-placing them anywhere within 1 DU from them
-at the end of the movement.</description>
+      <description>When a Reclaimed Unit with the Warden Guide ability performs a Movement Action, it can move up to 2 Wardens within 1 DU from it, placing them anywhere within 1 DU from them at the end of the movement.</description>
     </rule>
     <rule name="Warden Guide 1" id="e857-bbfd-37ad-0ad3" hidden="false">
-      <description>When a Reclaimed Unit with the Warden Guide
-ability performs a Movement Action, it can
-move up to 1 Wardens within 1 DU from it,
-placing them anywhere within 1 DU from them
-at the end of the movement.</description>
+      <description>When a Reclaimed Unit with the Warden Guide ability performs a Movement Action, it can move up to 1 Wardens within 1 DU from it, placing them anywhere within 1 DU from them at the end of the movement.</description>
     </rule>
     <rule name="Blunt" id="5c0a-7a0b-2a61-2ca5" hidden="false">
       <description>The Unit cannot interact with objectives, neither
